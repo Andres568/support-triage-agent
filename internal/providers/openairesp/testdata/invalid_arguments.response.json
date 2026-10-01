@@ -1,0 +1,1 @@
+{"id":"resp_8","status":"completed","model":"grok-4.7","output":[{"type":"function_call","id":"fc_2","call_id":"call_bad","name":"get_order","arguments":"{order_number: ORD-100103"}],"usage":{"input_tokens":120,"output_tokens":12}}

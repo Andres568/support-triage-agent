@@ -1,0 +1,77 @@
+{
+  "id": "resp_488692",
+  "object": "response",
+  "created_at": 1790732528,
+  "completed_at": 1790732528,
+  "status": "completed",
+  "incomplete_details": null,
+  "model": "qwen3:8b",
+  "previous_response_id": null,
+  "instructions": "You are a support agent for an online shop. Always look up an order with get_order before answering about it.",
+  "output": [
+    {
+      "id": "fc_resp_488692_0",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "call_2q06wz4g",
+      "name": "get_order",
+      "arguments": "{\"order_number\":\"ORD-100103\"}"
+    }
+  ],
+  "error": null,
+  "tools": [
+    {
+      "type": "function",
+      "name": "get_order",
+      "description": "Look up an order.",
+      "strict": false,
+      "parameters": {
+        "properties": {
+          "order_number": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "order_number"
+        ],
+        "type": "object"
+      }
+    }
+  ],
+  "tool_choice": "auto",
+  "truncation": "disabled",
+  "parallel_tool_calls": true,
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "top_p": 1,
+  "presence_penalty": 0,
+  "frequency_penalty": 0,
+  "top_logprobs": 0,
+  "temperature": 0,
+  "reasoning": {
+    "effort": "none"
+  },
+  "usage": {
+    "input_tokens": 180,
+    "output_tokens": 28,
+    "total_tokens": 208,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "max_output_tokens": 2048,
+  "max_tool_calls": null,
+  "store": false,
+  "background": false,
+  "service_tier": "default",
+  "metadata": {},
+  "safety_identifier": null,
+  "prompt_cache_key": null
+}
+

@@ -1,0 +1,33 @@
+{
+  "model": "claude-sonnet-5-5",
+  "max_tokens": 1024,
+  "system": "You are a support agent.",
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Where is order ORD-100103?"
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "name": "get_order",
+      "description": "Look up an order.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "order_number": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "order_number"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1265 @@
+{
+  "model": "ollama/qwen3:8b",
+  "prompt_sha": "ed07d2a47889fc23d8159b496efa36d7bf188e38f3073494ff3b13c9834933f7",
+  "tools_sha": "584e0161d169aa6aa72ec6ca6951195e0a8038b10ec15c91b78e33e986081d9b",
+  "recorded_at": "2026-10-01T19:55:20.585072Z",
+  "fixture": {
+    "clock": "2026-10-01T19:54:27.003762Z",
+    "seed": {
+      "orders": [
+        {
+          "created_at": "2026-09-30T19:54:26.026875+00:00",
+          "shipped_at": null,
+          "delivered_at": null,
+          "order_number": "ORD-100101"
+        },
+        {
+          "created_at": "2026-09-28T19:54:26.026875+00:00",
+          "shipped_at": null,
+          "delivered_at": null,
+          "order_number": "ORD-100102"
+        },
+        {
+          "created_at": "2026-09-23T19:54:26.026875+00:00",
+          "shipped_at": "2026-09-28T19:54:26.026875+00:00",
+          "delivered_at": null,
+          "order_number": "ORD-100103"
+        },
+        {
+          "created_at": "2026-09-03T19:54:26.026875+00:00",
+          "shipped_at": "2026-09-08T19:54:26.026875+00:00",
+          "delivered_at": null,
+          "order_number": "ORD-100104"
+        },
+        {
+          "created_at": "2026-09-16T19:54:26.026875+00:00",
+          "shipped_at": "2026-09-21T19:54:26.026875+00:00",
+          "delivered_at": "2026-09-26T19:54:26.026875+00:00",
+          "order_number": "ORD-100105"
+        },
+        {
+          "created_at": "2026-09-11T19:54:26.026875+00:00",
+          "shipped_at": "2026-09-17T19:54:26.026875+00:00",
+          "delivered_at": "2026-09-22T19:54:26.026875+00:00",
+          "order_number": "ORD-100106"
+        },
+        {
+          "created_at": "2026-08-04T19:54:26.026875+00:00",
+          "shipped_at": "2026-08-10T19:54:26.026875+00:00",
+          "delivered_at": "2026-08-17T19:54:26.026875+00:00",
+          "order_number": "ORD-100107"
+        },
+        {
+          "created_at": "2026-09-13T19:54:26.026875+00:00",
+          "shipped_at": "2026-09-19T19:54:26.026875+00:00",
+          "delivered_at": "2026-09-23T19:54:26.026875+00:00",
+          "order_number": "ORD-100108"
+        },
+        {
+          "created_at": "2026-09-27T19:54:26.026875+00:00",
+          "shipped_at": null,
+          "delivered_at": null,
+          "order_number": "ORD-100109"
+        },
+        {
+          "created_at": "2026-09-19T19:54:26.026875+00:00",
+          "shipped_at": null,
+          "delivered_at": null,
+          "order_number": "ORD-100110"
+        },
+        {
+          "created_at": "2026-09-20T19:54:26.026875+00:00",
+          "shipped_at": "2026-09-25T19:54:26.026875+00:00",
+          "delivered_at": null,
+          "order_number": "ORD-100111"
+        },
+        {
+          "created_at": "2026-10-01T13:54:26.026875+00:00",
+          "shipped_at": null,
+          "delivered_at": null,
+          "order_number": "ORD-100112"
+        },
+        {
+          "created_at": "2026-09-15T19:54:26.026875+00:00",
+          "shipped_at": "2026-09-20T19:54:26.026875+00:00",
+          "delivered_at": "2026-09-24T19:54:26.026875+00:00",
+          "order_number": "ORD-100113"
+        },
+        {
+          "created_at": "2026-09-21T19:54:26.026875+00:00",
+          "shipped_at": "2026-09-26T19:54:26.026875+00:00",
+          "delivered_at": null,
+          "order_number": "ORD-100114"
+        },
+        {
+          "created_at": "2026-09-17T19:54:26.026875+00:00",
+          "shipped_at": "2026-09-22T19:54:26.026875+00:00",
+          "delivered_at": "2026-09-27T19:54:26.026875+00:00",
+          "order_number": "ORD-100115"
+        }
+      ],
+      "tickets": [
+        {
+          "created_at": "2026-10-01T14:54:26.026875+00:00",
+          "external_id": "HD-2001"
+        },
+        {
+          "created_at": "2026-10-01T15:04:26.026875+00:00",
+          "external_id": "HD-2002"
+        },
+        {
+          "created_at": "2026-10-01T15:14:26.026875+00:00",
+          "external_id": "HD-2003"
+        },
+        {
+          "created_at": "2026-10-01T15:24:26.026875+00:00",
+          "external_id": "HD-2004"
+        },
+        {
+          "created_at": "2026-10-01T15:34:26.026875+00:00",
+          "external_id": "HD-2005"
+        },
+        {
+          "created_at": "2026-10-01T15:44:26.026875+00:00",
+          "external_id": "HD-2006"
+        },
+        {
+          "created_at": "2026-10-01T15:54:26.026875+00:00",
+          "external_id": "HD-2007"
+        },
+        {
+          "created_at": "2026-10-01T16:04:26.026875+00:00",
+          "external_id": "HD-2008"
+        },
+        {
+          "created_at": "2026-10-01T16:14:26.026875+00:00",
+          "external_id": "HD-2009"
+        },
+        {
+          "created_at": "2026-10-01T16:24:26.026875+00:00",
+          "external_id": "HD-2010"
+        },
+        {
+          "created_at": "2026-10-01T16:34:26.026875+00:00",
+          "external_id": "HD-2011"
+        },
+        {
+          "created_at": "2026-10-01T16:44:26.026875+00:00",
+          "external_id": "HD-2012"
+        },
+        {
+          "created_at": "2026-10-01T16:54:26.026875+00:00",
+          "external_id": "HD-2013"
+        },
+        {
+          "created_at": "2026-10-01T17:04:26.026875+00:00",
+          "external_id": "HD-2014"
+        },
+        {
+          "created_at": "2026-10-01T17:14:26.026875+00:00",
+          "external_id": "HD-2015"
+        },
+        {
+          "created_at": "2026-10-01T17:24:26.026875+00:00",
+          "external_id": "HD-2016"
+        },
+        {
+          "created_at": "2026-10-01T17:34:26.026875+00:00",
+          "external_id": "HD-2017"
+        },
+        {
+          "created_at": "2026-10-01T17:44:26.026875+00:00",
+          "external_id": "HD-2018"
+        },
+        {
+          "created_at": "2026-10-01T17:54:26.026875+00:00",
+          "external_id": "HD-2019"
+        },
+        {
+          "created_at": "2026-10-01T18:04:26.026875+00:00",
+          "external_id": "HD-2020"
+        },
+        {
+          "created_at": "2026-10-01T18:14:26.026875+00:00",
+          "external_id": "HD-2021"
+        },
+        {
+          "created_at": "2026-10-01T18:24:26.026875+00:00",
+          "external_id": "HD-2022"
+        },
+        {
+          "created_at": "2026-10-01T18:34:26.026875+00:00",
+          "external_id": "HD-2023"
+        },
+        {
+          "created_at": "2026-10-01T18:44:26.026875+00:00",
+          "external_id": "HD-2024"
+        },
+        {
+          "created_at": "2026-10-01T18:54:26.026875+00:00",
+          "external_id": "HD-2025"
+        },
+        {
+          "created_at": "2026-10-01T19:04:26.026875+00:00",
+          "external_id": "HD-2026"
+        },
+        {
+          "created_at": "2026-10-01T19:14:26.026875+00:00",
+          "external_id": "HD-2027"
+        },
+        {
+          "created_at": "2026-10-01T19:24:26.026875+00:00",
+          "external_id": "HD-2028"
+        },
+        {
+          "created_at": "2026-10-01T19:34:26.026875+00:00",
+          "external_id": "HD-2029"
+        },
+        {
+          "created_at": "2026-10-01T19:44:26.026875+00:00",
+          "external_id": "HD-2030"
+        }
+      ]
+    }
+  },
+  "entries": {
+    "HD-2004/address_change#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_jjbm85yc",
+                "name": "get_task_order",
+                "args": {
+                  "order_number": "ORD-100112"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 33,
+            "output_tokens": 29,
+            "cache_read_tokens": 1419
+          },
+          "ID": "resp_539762",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 763,
+        "request_summary": [],
+        "fingerprint": "136b41da5bfc9d9bbdcdbde3b6195a94998855c8021c5db6a95a6529ec42a057"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_a9hn2awn",
+                "name": "search_policy",
+                "args": {
+                  "query": "address change"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 146,
+            "output_tokens": 21,
+            "cache_read_tokens": 1448
+          },
+          "ID": "resp_607124",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 874,
+        "request_summary": [
+          "get_task_order"
+        ],
+        "fingerprint": "4f0b9ca529ef5981a765fed7c1e9689cd144cb8099a90e1b61386c5fe1cc4528"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_v0d5x7nn",
+                "name": "submit_proposal",
+                "args": {
+                  "verdict": "not_eligible",
+                  "policy_slug": "address-changes",
+                  "reason": "The order has already been paid and shipped, so the shipping address cannot be changed. According to the policy, address changes are only eligible if the order has not shipped (status paid or in_production).",
+                  "reprint_items": [],
+                  "refund_cents": 0
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 270,
+            "output_tokens": 93,
+            "cache_read_tokens": 1590
+          },
+          "ID": "resp_902766",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2733,
+        "request_summary": [
+          "get_task_order",
+          "search_policy"
+        ],
+        "fingerprint": "52eb3bad1587982c5cf33e1a7b76f953732aa27b6a778ea395f715308472b463"
+      }
+    ],
+    "HD-2005/reprint_request#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_tfqo1cu2",
+                "name": "get_task_order",
+                "args": {
+                  "order_number": "ORD-100105"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 1448,
+            "output_tokens": 29,
+            "cache_read_tokens": 5
+          },
+          "ID": "resp_805627",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2255,
+        "request_summary": [],
+        "fingerprint": "b6438aec037bfdac5f0ced9526128b2d3ba4b12ba89a2242694cf957df733886"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_yix0ekj3",
+                "name": "search_policy",
+                "args": {
+                  "query": "damaged reprint"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 281,
+            "output_tokens": 22,
+            "cache_read_tokens": 1449
+          },
+          "ID": "resp_758691",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 843,
+        "request_summary": [
+          "get_task_order"
+        ],
+        "fingerprint": "f00ddc60dc92499f01aef1b4d32be2041c7a7c89529d5c4a541dfcf725835cf1"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_0mgbedw2",
+                "name": "submit_proposal",
+                "args": {
+                  "reason": "The order was delivered and the customer reported the damage within 30 days of delivery. The policy allows a free reprint for damaged orders within this time frame.",
+                  "reprint_items": [
+                    {
+                      "qty": 250,
+                      "sku": "MUG-CER-11OZ"
+                    }
+                  ],
+                  "refund_cents": 0,
+                  "verdict": "eligible",
+                  "policy_slug": "reprint-damaged"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 308,
+            "output_tokens": 92,
+            "cache_read_tokens": 1726
+          },
+          "ID": "resp_153347",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2859,
+        "request_summary": [
+          "get_task_order",
+          "search_policy"
+        ],
+        "fingerprint": "fd7234c58c71c660559b9ef24b118f8add534b3f178bffd8b0fd9afef5093bb7"
+      }
+    ],
+    "HD-2006/reprint_request#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_6exuc816",
+                "name": "get_task_order",
+                "args": {
+                  "order_number": "ORD-100106"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 28,
+            "output_tokens": 29,
+            "cache_read_tokens": 1425
+          },
+          "ID": "resp_676613",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 956,
+        "request_summary": [],
+        "fingerprint": "5e30c9dc96d5893178e38eb7acc0802d4c2caab2600eb7cde6dd716f04bb9510"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_pg2j7fih",
+                "name": "search_policy",
+                "args": {
+                  "query": "reprint-damaged"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 274,
+            "output_tokens": 23,
+            "cache_read_tokens": 1449
+          },
+          "ID": "resp_474898",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 1013,
+        "request_summary": [
+          "get_task_order"
+        ],
+        "fingerprint": "aa3d53caea672d040895f8a888a2ee9a25df1d550b3c2a6bcd86757d5c3f5906"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_ed9ii3o3",
+                "name": "submit_proposal",
+                "args": {
+                  "policy_slug": "reprint-damaged",
+                  "reason": "The order was misprinted, delivered on 2026-09-22, and the customer reported the issue 9 days after delivery, which is within the 30-day window. The policy allows a free reprint for misprints reported within 30 days.",
+                  "reprint_items": [
+                    {
+                      "qty": 500,
+                      "sku": "TSH-CTN-STD"
+                    }
+                  ],
+                  "refund_cents": 0,
+                  "verdict": "eligible"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 310,
+            "output_tokens": 116,
+            "cache_read_tokens": 1719
+          },
+          "ID": "resp_19752",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 3400,
+        "request_summary": [
+          "get_task_order",
+          "search_policy"
+        ],
+        "fingerprint": "84850be84464daf41abfe10055f86fc151e3819e40fef2a0b5760996e40a3a73"
+      }
+    ],
+    "HD-2007/reprint_request#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_w2ywyt6n",
+                "name": "get_task_order",
+                "args": {
+                  "order_number": "ORD-100104"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 30,
+            "output_tokens": 29,
+            "cache_read_tokens": 1425
+          },
+          "ID": "resp_851804",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 784,
+        "request_summary": [],
+        "fingerprint": "6b20df807c67d1acc9f79bab5b764cc64777d3345130e8ac57418bc80683bc23"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_r3d6fie8",
+                "name": "search_policy",
+                "args": {
+                  "query": "shipping-delay"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 218,
+            "output_tokens": 20,
+            "cache_read_tokens": 1451
+          },
+          "ID": "resp_68354",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 909,
+        "request_summary": [
+          "get_task_order"
+        ],
+        "fingerprint": "aeee5da8ff73208fd655acc3f65fb75a7d7d506e566cc54f1f7e36db8c0bd1ec"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_1ai2k3pn",
+                "name": "submit_proposal",
+                "args": {
+                  "refund_cents": 0,
+                  "verdict": "eligible",
+                  "policy_slug": "shipping-delay",
+                  "reason": "The order was marked as lost_in_transit, and it has been 17 business days since it shipped. According to the shipping-delay policy, if a domestic package has not arrived 15 business days after it shipped, we reprint and reship the order for free.",
+                  "reprint_items": [
+                    {
+                      "qty": 200,
+                      "sku": "PST-MAT-18X24"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 291,
+            "output_tokens": 115,
+            "cache_read_tokens": 1665
+          },
+          "ID": "resp_476285",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 3303,
+        "request_summary": [
+          "get_task_order",
+          "search_policy"
+        ],
+        "fingerprint": "1de8548f9050f0cf4acef9362677dc9364ed0d211e24f267ce9e894ea0f7bf5c"
+      }
+    ],
+    "HD-2012/refund_review#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_0nd6lfm4",
+                "name": "get_task_order",
+                "args": {
+                  "order_number": "ORD-100115"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 33,
+            "output_tokens": 29,
+            "cache_read_tokens": 1419
+          },
+          "ID": "resp_388916",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 842,
+        "request_summary": [],
+        "fingerprint": "b502a7e25bed773aa19a5322fa82024dc4fbbf280837636a6be285432cd02f2f"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_hrrr7pkl",
+                "name": "search_policy",
+                "args": {
+                  "query": "damaged reprint"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 278,
+            "output_tokens": 22,
+            "cache_read_tokens": 1448
+          },
+          "ID": "resp_442908",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 1038,
+        "request_summary": [
+          "get_task_order"
+        ],
+        "fingerprint": "2f9f4fede69ff08ead926f2eb967863478ea2c93b84c85d53d24f11f9865a6cb"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_d97olsc8",
+                "name": "submit_proposal",
+                "args": {
+                  "verdict": "eligible",
+                  "policy_slug": "reprint-damaged",
+                  "reason": "The order was delivered and the customer reported the damage within 30 days of delivery. The policy allows a free reprint for damaged orders reported within this time frame.",
+                  "reprint_items": [
+                    {
+                      "qty": 200,
+                      "sku": "TSH-CTN-STD"
+                    }
+                  ],
+                  "refund_cents": 0
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 308,
+            "output_tokens": 91,
+            "cache_read_tokens": 1722
+          },
+          "ID": "resp_35264",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2690,
+        "request_summary": [
+          "get_task_order",
+          "search_policy"
+        ],
+        "fingerprint": "8bd548389f726233c58f04253e58c0669ff6164fb48532c66531febbc67f5024"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_izxzvyu6",
+                "name": "submit_proposal",
+                "args": {
+                  "refund_cents": 0,
+                  "reprint_items": [
+                    {
+                      "qty": 200,
+                      "sku": "TSH-CTN-STD"
+                    }
+                  ],
+                  "verdict": "eligible",
+                  "policy_slug": "reprint-damaged",
+                  "reason": "The order was delivered and the customer reported the damage within 30 days of delivery. The policy allows a free reprint for damaged orders reported within this time frame."
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 135,
+            "output_tokens": 91,
+            "cache_read_tokens": 2026
+          },
+          "ID": "resp_454163",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2594,
+        "request_summary": [
+          "get_task_order",
+          "search_policy",
+          "submit_proposal"
+        ],
+        "fingerprint": "9dc023ca5852f6651566ae50593614f68bd2f29267180ebb96a2c483a91b6298"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_wt34tl4f",
+                "name": "submit_proposal",
+                "args": {
+                  "policy_slug": "reprint-damaged",
+                  "reason": "The order was delivered and the customer reported the damage within 30 days of delivery. The policy allows a free reprint for damaged orders reported within this time frame.",
+                  "refund_cents": 0,
+                  "reprint_items": [],
+                  "verdict": "eligible"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 135,
+            "output_tokens": 75,
+            "cache_read_tokens": 2157
+          },
+          "ID": "resp_138000",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2210,
+        "request_summary": [
+          "get_task_order",
+          "search_policy",
+          "submit_proposal",
+          "submit_proposal"
+        ],
+        "fingerprint": "57a940a3a738a53aa3a140472f3983a2d5e4f8b4d6c22c976ab6182eb35efd3b"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_3axytofe",
+                "name": "submit_proposal",
+                "args": {
+                  "policy_slug": "reprint-damaged",
+                  "reason": "The order was delivered and the customer reported the damage within 30 days of delivery. The policy allows a free reprint for damaged orders reported within this time frame.",
+                  "refund_cents": 0,
+                  "reprint_items": [],
+                  "verdict": "eligible"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 108,
+            "output_tokens": 75,
+            "cache_read_tokens": 2288
+          },
+          "ID": "resp_600905",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2110,
+        "request_summary": [
+          "get_task_order",
+          "search_policy",
+          "submit_proposal",
+          "submit_proposal",
+          "submit_proposal"
+        ],
+        "fingerprint": "8e6738d7a6635ad57a5faa27571bd2b749c32746ea17b6bddd29670f536fa5b0"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_63fgfk0d",
+                "name": "submit_proposal",
+                "args": {
+                  "verdict": "eligible",
+                  "policy_slug": "reprint-damaged",
+                  "reason": "The order was delivered and the customer reported the damage within 30 days of delivery. The policy allows a free reprint for damaged orders reported within this time frame.",
+                  "refund_cents": 0,
+                  "reprint_items": []
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 108,
+            "output_tokens": 75,
+            "cache_read_tokens": 2392
+          },
+          "ID": "resp_663240",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2135,
+        "request_summary": [
+          "get_task_order",
+          "search_policy",
+          "submit_proposal",
+          "submit_proposal",
+          "submit_proposal",
+          "submit_proposal"
+        ],
+        "fingerprint": "cb8a5621a9ef6ac79042eb94feea36b49ad9aff23641a11326dd939ad0bb80bb"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_5g5tsm3m",
+                "name": "submit_proposal",
+                "args": {
+                  "policy_slug": "reprint-damaged",
+                  "reason": "The order was delivered and the customer reported the damage within 30 days of delivery. The policy allows a free reprint for damaged orders reported within this time frame.",
+                  "refund_cents": 0,
+                  "reprint_items": [],
+                  "verdict": "eligible"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 108,
+            "output_tokens": 75,
+            "cache_read_tokens": 2496
+          },
+          "ID": "resp_193035",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2128,
+        "request_summary": [
+          "get_task_order",
+          "search_policy",
+          "submit_proposal",
+          "submit_proposal",
+          "submit_proposal",
+          "submit_proposal",
+          "submit_proposal"
+        ],
+        "fingerprint": "4bb1e678415109511f7b43b2059c3f2c952bb04b59ac50a92bd550d9ea8e4eb9"
+      }
+    ],
+    "HD-2017/reprint_request#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_tgh3jqnm",
+                "name": "get_task_order",
+                "args": {
+                  "order_number": "ORD-100107"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 28,
+            "output_tokens": 29,
+            "cache_read_tokens": 1425
+          },
+          "ID": "resp_28796",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 876,
+        "request_summary": [],
+        "fingerprint": "b2879f4604106cd5bc4a98c13b0c5dc0ebb57b809c458172767df63ae3e7059e"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_qd2u838t",
+                "name": "search_policy",
+                "args": {
+                  "query": "damaged reprint"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 282,
+            "output_tokens": 22,
+            "cache_read_tokens": 1449
+          },
+          "ID": "resp_948071",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 1079,
+        "request_summary": [
+          "get_task_order"
+        ],
+        "fingerprint": "78e390b7fccd52411a293eee551659c085e12c4ff2b315af71c9bfb32d6ca743"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_yniuxfdb",
+                "name": "submit_proposal",
+                "args": {
+                  "verdict": "not_eligible",
+                  "policy_slug": "reprint-damaged",
+                  "reason": "The order was delivered 45 days ago, which is more than the 30-day window for reporting damaged items. The customer must report the issue within 30 days of delivery to be eligible for a reprint.",
+                  "reprint_items": [],
+                  "refund_cents": 0
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 308,
+            "output_tokens": 90,
+            "cache_read_tokens": 1727
+          },
+          "ID": "resp_982066",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2652,
+        "request_summary": [
+          "get_task_order",
+          "search_policy"
+        ],
+        "fingerprint": "1a4a5b222dc59b7239737faf43bd9215bb6c2232909f1434eeb09cfe53fa7013"
+      }
+    ],
+    "HD-2018/refund_review#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_7ou26nj8",
+                "name": "get_task_order",
+                "args": {
+                  "order_number": "ORD-100110"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 28,
+            "output_tokens": 29,
+            "cache_read_tokens": 1424
+          },
+          "ID": "resp_788710",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 776,
+        "request_summary": [],
+        "fingerprint": "9bbab3819f95f3321e2df9eb4bafcfac82d5f357902419d20ee104b915d783d9"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_o6axz4fx",
+                "name": "search_policy",
+                "args": {
+                  "query": "refund_review customer_request"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 144,
+            "output_tokens": 23,
+            "cache_read_tokens": 1448
+          },
+          "ID": "resp_24566",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 820,
+        "request_summary": [
+          "get_task_order"
+        ],
+        "fingerprint": "6538225eca8dc83d6912fbbff644ec06234c7d90eacf0099af0615d587e54bf4"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_6etp4w8l",
+                "name": "submit_proposal",
+                "args": {
+                  "reprint_items": [],
+                  "refund_cents": 0,
+                  "verdict": "not_eligible",
+                  "policy_slug": "refunds",
+                  "reason": "The order has already been refunded, so a refund review is not eligible."
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 279,
+            "output_tokens": 58,
+            "cache_read_tokens": 1588
+          },
+          "ID": "resp_342423",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 1881,
+        "request_summary": [
+          "get_task_order",
+          "search_policy"
+        ],
+        "fingerprint": "8b6d7de93598c1870a759e9f523d19ed79497b75341c0edb6e198f1bf6b563c5"
+      }
+    ],
+    "HD-2019/address_change#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_erzpt9z0",
+                "name": "get_task_order",
+                "args": {
+                  "order_number": "ORD-100111"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 15,
+            "output_tokens": 29,
+            "cache_read_tokens": 1437
+          },
+          "ID": "resp_861164",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 904,
+        "request_summary": [],
+        "fingerprint": "141c75ca729c9bfb5f3b4e53b7b73a18b8c0dba7077dab225c61c84c735818c2"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_chg2368r",
+                "name": "search_policy",
+                "args": {
+                  "query": "address change"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 223,
+            "output_tokens": 21,
+            "cache_read_tokens": 1448
+          },
+          "ID": "resp_197547",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 794,
+        "request_summary": [
+          "get_task_order"
+        ],
+        "fingerprint": "5edf4a730ccab65fe61765306779de178072de51087b4ada849a6986d577516a"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_e7qs3ejo",
+                "name": "submit_proposal",
+                "args": {
+                  "policy_slug": "address-changes",
+                  "reason": "The order has already been shipped, so an address change is not eligible. According to the policy, address changes can only be made before the order ships.",
+                  "reprint_items": [],
+                  "refund_cents": 0,
+                  "verdict": "not_eligible"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 270,
+            "output_tokens": 83,
+            "cache_read_tokens": 1667
+          },
+          "ID": "resp_984666",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2567,
+        "request_summary": [
+          "get_task_order",
+          "search_policy"
+        ],
+        "fingerprint": "2f94de026f1942a9679882f87a4af7b969a0bf08f054d05fc67c1c994d6a223f"
+      }
+    ],
+    "HD-2021/refund_review#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_gxoou287",
+                "name": "get_task_order",
+                "args": {
+                  "order_number": "ORD-100108"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 28,
+            "output_tokens": 29,
+            "cache_read_tokens": 1424
+          },
+          "ID": "resp_494101",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 772,
+        "request_summary": [],
+        "fingerprint": "0b77dd2034bbb71120d7c1f6134ebc32dd25e2dd57d88f7b84f83eb6be09b80a"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_stq5zfz0",
+                "name": "search_policy",
+                "args": {
+                  "query": "misprint refund"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 273,
+            "output_tokens": 22,
+            "cache_read_tokens": 1448
+          },
+          "ID": "resp_440501",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 1060,
+        "request_summary": [
+          "get_task_order"
+        ],
+        "fingerprint": "ba48823aa2ef555a24518473a54117a3d86d1e1db4ec39cb0ea691817260b40e"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_cle07fx7",
+                "name": "submit_proposal",
+                "args": {
+                  "verdict": "eligible",
+                  "policy_slug": "refunds",
+                  "reason": "The order was misprinted and reported within 30 days of delivery. The customer may choose a refund instead of a free reprint. The refund amount is the total order value.",
+                  "reprint_items": [],
+                  "refund_cents": 124000
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 298,
+            "output_tokens": 81,
+            "cache_read_tokens": 1717
+          },
+          "ID": "resp_676227",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2437,
+        "request_summary": [
+          "get_task_order",
+          "search_policy"
+        ],
+        "fingerprint": "53773bbe36128ba1dab39c4549800d79a15fb49b55c1418ebfc6fe6300f7cece"
+      }
+    ]
+  }
+}

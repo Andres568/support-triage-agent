@@ -1,0 +1,26 @@
+{
+  "model": "qwen3:8b",
+  "instructions": "You are a support agent.",
+  "input": [
+    {"role": "user", "content": "Where is order ORD-100103?"},
+    {"type": "message", "role": "assistant", "content": [{"type": "output_text", "text": "Let me check."}]},
+    {"type": "function_call", "call_id": "call_1", "name": "get_order", "arguments": "{\"order_number\":\"ORD-100103\"}"},
+    {"type": "function_call", "call_id": "call_2", "name": "search_policy", "arguments": "{\"query\":\"late\"}"},
+    {"type": "function_call_output", "call_id": "call_1", "output": "{\"status\":\"shipped\"}"},
+    {"type": "function_call_output", "call_id": "call_2", "output": "ERROR: no policy matches \"late\""}
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "name": "get_order",
+      "description": "Look up an order.",
+      "parameters": {"type": "object", "properties": {"order_number": {"type": "string"}}, "required": ["order_number"]},
+      "strict": false
+    }
+  ],
+  "tool_choice": "auto",
+  "max_output_tokens": 2048,
+  "store": false,
+  "reasoning": {"effort": "none"},
+  "temperature": 0
+}

@@ -1,0 +1,10 @@
+{
+  "id": "msg_01final",
+  "type": "message",
+  "role": "assistant",
+  "model": "claude-sonnet-5-5",
+  "content": [{"type": "text", "text": "Your order shipped."}],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {"input_tokens": 410, "output_tokens": 8}
+}

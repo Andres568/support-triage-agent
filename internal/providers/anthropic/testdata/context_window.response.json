@@ -1,0 +1,10 @@
+{
+  "id": "msg_01window",
+  "type": "message",
+  "role": "assistant",
+  "model": "claude-sonnet-5-5",
+  "content": [{"type": "text", "text": "Your order"}],
+  "stop_reason": "model_context_window_exceeded",
+  "stop_sequence": null,
+  "usage": {"input_tokens": 199990, "output_tokens": 10}
+}

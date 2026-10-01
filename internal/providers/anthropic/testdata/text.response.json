@@ -1,0 +1,15 @@
+{
+  "id": "msg_01text",
+  "type": "message",
+  "role": "assistant",
+  "model": "claude-sonnet-5-5",
+  "content": [
+    {"type": "thinking", "thinking": "The customer wants a status.", "signature": "sig"},
+    {"type": "redacted_thinking", "data": "opaque"},
+    {"type": "text", "text": "I will look into "},
+    {"type": "text", "text": "your order."}
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {"input_tokens": 120, "output_tokens": 15, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0}
+}

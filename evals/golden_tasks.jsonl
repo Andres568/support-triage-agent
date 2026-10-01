@@ -1,0 +1,9 @@
+{"ticket":"HD-2005","type":"reprint_request","reason":"damaged","order_number":"ORD-100105","verdict":"eligible"}
+{"ticket":"HD-2006","type":"reprint_request","reason":"misprint","order_number":"ORD-100106","verdict":"eligible"}
+{"ticket":"HD-2007","type":"reprint_request","reason":"lost_in_transit","order_number":"ORD-100104","verdict":"eligible"}
+{"ticket":"HD-2017","type":"reprint_request","reason":"damaged","order_number":"ORD-100107","verdict":"not_eligible"}
+{"ticket":"HD-2004","type":"address_change","reason":"customer_request","order_number":"ORD-100112","verdict":"eligible"}
+{"ticket":"HD-2019","type":"address_change","reason":"customer_request","order_number":"ORD-100111","verdict":"not_eligible"}
+{"ticket":"HD-2012","type":"refund_review","reason":"damaged","order_number":"ORD-100115","verdict":"eligible"}
+{"ticket":"HD-2021","type":"refund_review","reason":"misprint","order_number":"ORD-100108","verdict":"needs_human"}
+{"ticket":"HD-2018","type":"refund_review","reason":"customer_request","order_number":"ORD-100110","verdict":"not_eligible"}

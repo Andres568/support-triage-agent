@@ -1,0 +1,2662 @@
+{
+  "model": "ollama/qwen3:8b",
+  "prompt_sha": "b567de98d750756bbd9039a19e7a6fbf4aeb87bf3d1944dd49c5e93f547c1416",
+  "tools_sha": "d5deae3517bdb83af1baeb3883bc4a9b284222761763ef69065f763fdb6e5b28",
+  "recorded_at": "2026-10-01T19:54:16.347678Z",
+  "fixture": {
+    "clock": "2026-10-01T19:51:41.084981Z",
+    "seed": {
+      "orders": [
+        {
+          "created_at": "2026-09-30T19:51:40.158886+00:00",
+          "shipped_at": null,
+          "delivered_at": null,
+          "order_number": "ORD-100101"
+        },
+        {
+          "created_at": "2026-09-28T19:51:40.158886+00:00",
+          "shipped_at": null,
+          "delivered_at": null,
+          "order_number": "ORD-100102"
+        },
+        {
+          "created_at": "2026-09-23T19:51:40.158886+00:00",
+          "shipped_at": "2026-09-28T19:51:40.158886+00:00",
+          "delivered_at": null,
+          "order_number": "ORD-100103"
+        },
+        {
+          "created_at": "2026-09-03T19:51:40.158886+00:00",
+          "shipped_at": "2026-09-08T19:51:40.158886+00:00",
+          "delivered_at": null,
+          "order_number": "ORD-100104"
+        },
+        {
+          "created_at": "2026-09-16T19:51:40.158886+00:00",
+          "shipped_at": "2026-09-21T19:51:40.158886+00:00",
+          "delivered_at": "2026-09-26T19:51:40.158886+00:00",
+          "order_number": "ORD-100105"
+        },
+        {
+          "created_at": "2026-09-11T19:51:40.158886+00:00",
+          "shipped_at": "2026-09-17T19:51:40.158886+00:00",
+          "delivered_at": "2026-09-22T19:51:40.158886+00:00",
+          "order_number": "ORD-100106"
+        },
+        {
+          "created_at": "2026-08-04T19:51:40.158886+00:00",
+          "shipped_at": "2026-08-10T19:51:40.158886+00:00",
+          "delivered_at": "2026-08-17T19:51:40.158886+00:00",
+          "order_number": "ORD-100107"
+        },
+        {
+          "created_at": "2026-09-13T19:51:40.158886+00:00",
+          "shipped_at": "2026-09-19T19:51:40.158886+00:00",
+          "delivered_at": "2026-09-23T19:51:40.158886+00:00",
+          "order_number": "ORD-100108"
+        },
+        {
+          "created_at": "2026-09-27T19:51:40.158886+00:00",
+          "shipped_at": null,
+          "delivered_at": null,
+          "order_number": "ORD-100109"
+        },
+        {
+          "created_at": "2026-09-19T19:51:40.158886+00:00",
+          "shipped_at": null,
+          "delivered_at": null,
+          "order_number": "ORD-100110"
+        },
+        {
+          "created_at": "2026-09-20T19:51:40.158886+00:00",
+          "shipped_at": "2026-09-25T19:51:40.158886+00:00",
+          "delivered_at": null,
+          "order_number": "ORD-100111"
+        },
+        {
+          "created_at": "2026-10-01T13:51:40.158886+00:00",
+          "shipped_at": null,
+          "delivered_at": null,
+          "order_number": "ORD-100112"
+        },
+        {
+          "created_at": "2026-09-15T19:51:40.158886+00:00",
+          "shipped_at": "2026-09-20T19:51:40.158886+00:00",
+          "delivered_at": "2026-09-24T19:51:40.158886+00:00",
+          "order_number": "ORD-100113"
+        },
+        {
+          "created_at": "2026-09-21T19:51:40.158886+00:00",
+          "shipped_at": "2026-09-26T19:51:40.158886+00:00",
+          "delivered_at": null,
+          "order_number": "ORD-100114"
+        },
+        {
+          "created_at": "2026-09-17T19:51:40.158886+00:00",
+          "shipped_at": "2026-09-22T19:51:40.158886+00:00",
+          "delivered_at": "2026-09-27T19:51:40.158886+00:00",
+          "order_number": "ORD-100115"
+        }
+      ],
+      "tickets": [
+        {
+          "created_at": "2026-10-01T14:51:40.158886+00:00",
+          "external_id": "HD-2001"
+        },
+        {
+          "created_at": "2026-10-01T15:01:40.158886+00:00",
+          "external_id": "HD-2002"
+        },
+        {
+          "created_at": "2026-10-01T15:11:40.158886+00:00",
+          "external_id": "HD-2003"
+        },
+        {
+          "created_at": "2026-10-01T15:21:40.158886+00:00",
+          "external_id": "HD-2004"
+        },
+        {
+          "created_at": "2026-10-01T15:31:40.158886+00:00",
+          "external_id": "HD-2005"
+        },
+        {
+          "created_at": "2026-10-01T15:41:40.158886+00:00",
+          "external_id": "HD-2006"
+        },
+        {
+          "created_at": "2026-10-01T15:51:40.158886+00:00",
+          "external_id": "HD-2007"
+        },
+        {
+          "created_at": "2026-10-01T16:01:40.158886+00:00",
+          "external_id": "HD-2008"
+        },
+        {
+          "created_at": "2026-10-01T16:11:40.158886+00:00",
+          "external_id": "HD-2009"
+        },
+        {
+          "created_at": "2026-10-01T16:21:40.158886+00:00",
+          "external_id": "HD-2010"
+        },
+        {
+          "created_at": "2026-10-01T16:31:40.158886+00:00",
+          "external_id": "HD-2011"
+        },
+        {
+          "created_at": "2026-10-01T16:41:40.158886+00:00",
+          "external_id": "HD-2012"
+        },
+        {
+          "created_at": "2026-10-01T16:51:40.158886+00:00",
+          "external_id": "HD-2013"
+        },
+        {
+          "created_at": "2026-10-01T17:01:40.158886+00:00",
+          "external_id": "HD-2014"
+        },
+        {
+          "created_at": "2026-10-01T17:11:40.158886+00:00",
+          "external_id": "HD-2015"
+        },
+        {
+          "created_at": "2026-10-01T17:21:40.158886+00:00",
+          "external_id": "HD-2016"
+        },
+        {
+          "created_at": "2026-10-01T17:31:40.158886+00:00",
+          "external_id": "HD-2017"
+        },
+        {
+          "created_at": "2026-10-01T17:41:40.158886+00:00",
+          "external_id": "HD-2018"
+        },
+        {
+          "created_at": "2026-10-01T17:51:40.158886+00:00",
+          "external_id": "HD-2019"
+        },
+        {
+          "created_at": "2026-10-01T18:01:40.158886+00:00",
+          "external_id": "HD-2020"
+        },
+        {
+          "created_at": "2026-10-01T18:11:40.158886+00:00",
+          "external_id": "HD-2021"
+        },
+        {
+          "created_at": "2026-10-01T18:21:40.158886+00:00",
+          "external_id": "HD-2022"
+        },
+        {
+          "created_at": "2026-10-01T18:31:40.158886+00:00",
+          "external_id": "HD-2023"
+        },
+        {
+          "created_at": "2026-10-01T18:41:40.158886+00:00",
+          "external_id": "HD-2024"
+        },
+        {
+          "created_at": "2026-10-01T18:51:40.158886+00:00",
+          "external_id": "HD-2025"
+        },
+        {
+          "created_at": "2026-10-01T19:01:40.158886+00:00",
+          "external_id": "HD-2026"
+        },
+        {
+          "created_at": "2026-10-01T19:11:40.158886+00:00",
+          "external_id": "HD-2027"
+        },
+        {
+          "created_at": "2026-10-01T19:21:40.158886+00:00",
+          "external_id": "HD-2028"
+        },
+        {
+          "created_at": "2026-10-01T19:31:40.158886+00:00",
+          "external_id": "HD-2029"
+        },
+        {
+          "created_at": "2026-10-01T19:41:40.158886+00:00",
+          "external_id": "HD-2030"
+        }
+      ]
+    }
+  },
+  "entries": {
+    "HD-2001#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_qxcs26ry",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100103"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 1593,
+            "output_tokens": 28
+          },
+          "ID": "resp_650717",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 7392,
+        "request_summary": [],
+        "fingerprint": "5d7bcccda832b56bbb914f702ea92aef14d1638f731d624c9fa632755fc63191"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_0zw4ckzp",
+                "name": "search_policy",
+                "args": {
+                  "query": "shipping tracking"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 220,
+            "output_tokens": 21,
+            "cache_read_tokens": 1589
+          },
+          "ID": "resp_744587",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 660,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "8c081639c94b7d3ee2d3f7f990f9e853db14557a86791ac427b61324986da6a1"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_1n60jaf6",
+                "name": "submit_decision",
+                "args": {
+                  "confidence": 0.95,
+                  "reason": "The order was shipped and the tracking number is available. The customer is asking about the status of their order.",
+                  "follow_ups": [],
+                  "category": "order_status",
+                  "action": "auto_reply",
+                  "draft_reply": "Hi Carol, your order (ORD-100103) was shipped on September 28, 2026. You can track it using the tracking number 9400111899223344556677 with USPS. If you haven't received it within 10 business days, please let us know so we can assist further. Have a great day!"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 290,
+            "output_tokens": 157,
+            "cache_read_tokens": 1805
+          },
+          "ID": "resp_422653",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 4224,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "4e8af9a37f61ba71b29daf81730b776ea4e4215e3ef17afc4d8552301191e903"
+      }
+    ],
+    "HD-2002#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_151dw6hc",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100111"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 66,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_482485",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 705,
+        "request_summary": [],
+        "fingerprint": "6f1e124a83df6c4c55d18d4f7730e613333020307f8cbd8ac64536e557603444"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_q1ncuaim",
+                "name": "submit_decision",
+                "args": {
+                  "reason": "The order was confirmed as shipped with tracking details and a shipment date.",
+                  "follow_ups": [],
+                  "category": "order_status",
+                  "action": "auto_reply",
+                  "draft_reply": "Your order ORD-100111 has been shipped via USPS with tracking number 9400111899223344550011. It was shipped on September 25, 2026. You can track its progress using the carrier's website.",
+                  "confidence": 0.95
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 222,
+            "output_tokens": 125,
+            "cache_read_tokens": 1585
+          },
+          "ID": "resp_42162",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 3287,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "cec1b655e1ad85f71970861218b7d519ae460183de033f1e62647010e5a12351"
+      }
+    ],
+    "HD-2003#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_ql7ws23p",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100101"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 69,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_439013",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 786,
+        "request_summary": [],
+        "fingerprint": "4fa7b59b8c139851432ef7146ff2aa330647e971f2b123a1861335e8f3dcebd5"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_sk9vcfig",
+                "name": "search_policy",
+                "args": {
+                  "query": "cancel order refund"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 143,
+            "output_tokens": 22,
+            "cache_read_tokens": 1588
+          },
+          "ID": "resp_189119",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 640,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "f60a7ae1c040044e118d6cb8cea7bcd35dca7594f9833c905d8f22aaecff8672"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_uuyx0pew",
+                "name": "submit_decision",
+                "args": {
+                  "draft_reply": "We can cancel your order and issue a refund. A teammate will review your request and contact you with next steps. Please note that refunds above 250 USD require approval from a support lead.",
+                  "confidence": 0.95,
+                  "reason": "The customer wants to cancel an order and request a refund. According to the policy, orders can be cancelled before production starts, and refunds are issued for cancelled orders. However, refunds above 250 USD require approval from a support lead.",
+                  "follow_ups": [
+                    {
+                      "order_number": "ORD-100101",
+                      "reason": "customer_request",
+                      "type": "refund_review"
+                    }
+                  ],
+                  "category": "order_change",
+                  "action": "draft_for_review"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 302,
+            "output_tokens": 155,
+            "cache_read_tokens": 1727
+          },
+          "ID": "resp_861676",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 4116,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "07c5b37373f818cec99abfb4b7151577a86e06f79862fdaf5d170bea0d1e4b4f"
+      }
+    ],
+    "HD-2004#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_schaq550",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100112"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 76,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_416731",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 774,
+        "request_summary": [],
+        "fingerprint": "8d6c8d40c54f5b32f10928e3a5e7145eb42fc791c4f5dc2e1a81a4053c8dd9a3"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_6gtq681z",
+                "name": "search_policy",
+                "args": {
+                  "query": "change shipping address"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 145,
+            "output_tokens": 22,
+            "cache_read_tokens": 1595
+          },
+          "ID": "resp_110586",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 695,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "f03f57010ec3f15805891a38de9ce99e07c3b9fa8da0ea7ce4cf5ec19d234d06"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_w1r2amhl",
+                "name": "submit_decision",
+                "args": {
+                  "confidence": 0.95,
+                  "reason": "The customer is requesting a shipping address change for an order that has not yet shipped, which is allowed before production starts.",
+                  "follow_ups": [
+                    {
+                      "order_number": "ORD-100112",
+                      "reason": "customer_request",
+                      "type": "address_change"
+                    }
+                  ],
+                  "category": "order_change",
+                  "action": "draft_for_review",
+                  "draft_reply": "Hi, I understand you've moved and need the shipping address updated for order ORD-100112. Please note that we can only change the shipping address if the order hasn't shipped yet. I'll review this request and get back to you shortly."
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 277,
+            "output_tokens": 144,
+            "cache_read_tokens": 1736
+          },
+          "ID": "resp_502159",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 3842,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "0acff3a3a08914c440c1a7682fcae3f6b4235439a4f76b26afc485894c6c3c97"
+      }
+    ],
+    "HD-2005#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_kpfymbdr",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100105"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 73,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_460516",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 776,
+        "request_summary": [],
+        "fingerprint": "b8f5860de567b6604407bec20d83e82b2263444aa89227c0c73c2f6e9c848516"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_78vs7rt0",
+                "name": "search_policy",
+                "args": {
+                  "query": "damaged product"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 273,
+            "output_tokens": 22,
+            "cache_read_tokens": 1592
+          },
+          "ID": "resp_87602",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 904,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "46d54ac6f1f4593d26b9cffd4b0a9c1d987cb11de7408743e186af6df377d68a"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_s64qodbu",
+                "name": "submit_decision",
+                "args": {
+                  "category": "damaged_or_misprint",
+                  "action": "auto_reply",
+                  "draft_reply": "We're sorry to hear that your mugs arrived broken. According to our policy, we will reprint the damaged mugs for free. Please ensure you include a photo of the damaged items, and we'll process the reprint as soon as possible. Thank you for your understanding.",
+                  "confidence": 0.95,
+                  "reason": "The customer reported that the mugs arrived broken, and the order was delivered. The policy states that we will reprint damaged orders for free if reported within 30 days of delivery and a photo is included.",
+                  "follow_ups": [
+                    {
+                      "order_number": "ORD-100105",
+                      "reason": "damaged",
+                      "type": "reprint_request"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 320,
+            "output_tokens": 183,
+            "cache_read_tokens": 1861
+          },
+          "ID": "resp_735901",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 4840,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "9083b359a62e9dec991267ef393fcc8b2f015e51b0d1c9bdc58c2adf1754717d"
+      }
+    ],
+    "HD-2006#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_lrjxgle5",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100106"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 74,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_579005",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 762,
+        "request_summary": [],
+        "fingerprint": "35b94ec41bb56f86bdafee8d8d04b37a79f6379d9e75bc2de255c5b1ec8a358d"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_0hhneq9k",
+                "name": "search_policy",
+                "args": {
+                  "query": "misprint"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 266,
+            "output_tokens": 21,
+            "cache_read_tokens": 1593
+          },
+          "ID": "resp_151504",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 759,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "e3627853e2734b08a3dea7f9a466d45d000930152de778d7862904e9f1de2e69"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_bz6i2i6s",
+                "name": "submit_decision",
+                "args": {
+                  "confidence": 0.95,
+                  "reason": "The customer reported a misprint issue with the order, and the order was delivered. According to the policy, we offer a free reprint for misprinted orders if reported within 30 days of delivery.",
+                  "follow_ups": [
+                    {
+                      "order_number": "ORD-100106",
+                      "reason": "misprint",
+                      "type": "reprint_request"
+                    }
+                  ],
+                  "category": "damaged_or_misprint",
+                  "action": "auto_reply",
+                  "draft_reply": "We apologize for the issue with the print on your T-shirts from ORD-100106. The colors appearing different from the approved proof is considered a misprint. We will reprint the order for free. Please ensure you include the photo you mentioned in your message when you reply so we can proceed with the reprint. Thank you for your understanding."
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 223,
+            "output_tokens": 183,
+            "cache_read_tokens": 1855
+          },
+          "ID": "resp_384435",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 4807,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "1a479e3bc1dd0fa91ec7f5520af3dd66cc4ba6cf98d664a10f95b942ac1fd44b"
+      }
+    ],
+    "HD-2007#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_4rhq41nq",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100104"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 68,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_436741",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 739,
+        "request_summary": [],
+        "fingerprint": "f87eba206a60d99439e348c54fc35e3efbaf842baf69a3f59e77283f1589db1b"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_2o5f3nfx",
+                "name": "search_policy",
+                "args": {
+                  "query": "shipping delay"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 217,
+            "output_tokens": 21,
+            "cache_read_tokens": 1587
+          },
+          "ID": "resp_487683",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 785,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "8f6377ac07eeab34f8997e27bdacd610b88005a358e011eef8ef921232b445c1"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_6d6b88jb",
+                "name": "submit_decision",
+                "args": {
+                  "category": "shipping_delay",
+                  "action": "auto_reply",
+                  "draft_reply": "Your order ORD-100104 was shipped on September 8, 2026. Since it has not arrived within 15 business days of shipping, we will open a trace with the carrier and reship the order for free. Please check your tracking information for any updates. If you have not received it within 30 business days, we will refund your order.",
+                  "confidence": 0.95,
+                  "reason": "The order has not arrived within the 15 business day shipping delay policy, so we will trace the package and reship it for free or refund it if requested.",
+                  "follow_ups": [
+                    {
+                      "order_number": "ORD-100104",
+                      "reason": "lost_in_transit",
+                      "type": "reprint_request"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 290,
+            "output_tokens": 183,
+            "cache_read_tokens": 1800
+          },
+          "ID": "resp_476071",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 4807,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "993e3c04442e79102fe58d417da8e75da894a8f09907a3457d01528e4eec8800"
+      }
+    ],
+    "HD-2008#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_spqrt4o1",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100109"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 66,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_509255",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 783,
+        "request_summary": [],
+        "fingerprint": "f1d1b8abdc931e9104c73845aacc99495925de3f936e8c94de2a479d74d84e9f"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_o105c13x",
+                "name": "search_policy",
+                "args": {
+                  "query": "refund cancelled order"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 139,
+            "output_tokens": 22,
+            "cache_read_tokens": 1585
+          },
+          "ID": "resp_511422",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 680,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "d863be4953d3516745461ea88b3fc6a39b0de44726de19c6b45911ddd2b6554d"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_urbscjgi",
+                "name": "submit_decision",
+                "args": {
+                  "follow_ups": [
+                    {
+                      "order_number": "ORD-100109",
+                      "reason": "cancelled_before_production",
+                      "type": "refund_review"
+                    }
+                  ],
+                  "category": "refund_request",
+                  "action": "draft_for_review",
+                  "draft_reply": "We're reviewing your refund request for order ORD-100109. Refunds for cancelled orders are processed and typically take 5 to 10 business days to appear on your card. If your refund hasn't been processed within this timeframe, please let us know.",
+                  "confidence": 0.95,
+                  "reason": "The customer cancelled order ORD-100109 and is requesting a refund. According to the policy, refunds for cancelled orders are processed and take 5 to 10 business days to appear on the card."
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 302,
+            "output_tokens": 169,
+            "cache_read_tokens": 1720
+          },
+          "ID": "resp_676709",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 4597,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "16f12bd68df5b0ca5965f21230645e1119f2708bdfd2352d32bf52cad8635b7c"
+      }
+    ],
+    "HD-2009#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_m3c3re6z",
+                "name": "search_policy",
+                "args": {
+                  "query": "dishwasher safe mugs"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 53,
+            "output_tokens": 24,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_531828",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 610,
+        "request_summary": [],
+        "fingerprint": "be6ccdb65a468ee4565ea9238df47187ac79b4d682f3d96ce824d6b519755128"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_r0nxn7l9",
+                "name": "submit_decision",
+                "args": {
+                  "category": "general",
+                  "action": "auto_reply",
+                  "draft_reply": "Our ceramic mugs are dishwasher and microwave safe, and the print does not fade with normal use. For other products like T-shirts, tote bags, posters, and art prints, please refer to the care instructions in our materials policy. Let me know if you need further assistance!",
+                  "confidence": 0.9,
+                  "reason": "The customer asked about the dishwasher and microwave safety of mugs, which is covered in the materials and care policy.",
+                  "follow_ups": []
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 131,
+            "output_tokens": 121,
+            "cache_read_tokens": 1572
+          },
+          "ID": "resp_137135",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 3122,
+        "request_summary": [
+          "search_policy"
+        ],
+        "fingerprint": "771eb00ee972a746c2e00cba752b3ddc45928f36ed672dca8cea53bb03db8d67"
+      }
+    ],
+    "HD-2010#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_ug02xqvu",
+                "name": "search_policy",
+                "args": {
+                  "query": "support hours"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 48,
+            "output_tokens": 21,
+            "cache_read_tokens": 1522
+          },
+          "ID": "resp_339528",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 639,
+        "request_summary": [],
+        "fingerprint": "979b6fbd073298c38efbc90374c15721b9c6dba5339bdfd20feab6501aeeb03b"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_u7hzq11m",
+                "name": "submit_decision",
+                "args": {
+                  "draft_reply": "Our support team is available Monday to Friday, 9 am to 5 pm US Eastern time. We aim to respond to every message within 1 business day. Please feel free to provide more details about your order, and we'll assist you shortly!",
+                  "confidence": 0.9,
+                  "reason": "The customer asked about support hours, and the policy confirms the availability and response times.",
+                  "follow_ups": [],
+                  "category": "general",
+                  "action": "auto_reply"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 234,
+            "output_tokens": 110,
+            "cache_read_tokens": 1566
+          },
+          "ID": "resp_233681",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2834,
+        "request_summary": [
+          "search_policy"
+        ],
+        "fingerprint": "25a80649a54cf5a93285ce735281bb2ba700aa055cb0a8b40e3a7a7b47c55b44"
+      }
+    ],
+    "HD-2011#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_fmhdk2wt",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100114"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 70,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_38594",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 809,
+        "request_summary": [],
+        "fingerprint": "91db278825a3dd0a317659247b3eefaf0a2c1539ec22e20d1cf529447eb42e71"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_4caszyam",
+                "name": "search_policy",
+                "args": {
+                  "query": "international shipping time"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 207,
+            "output_tokens": 22,
+            "cache_read_tokens": 1589
+          },
+          "ID": "resp_373440",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 785,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "db77bb0d52beb46230baad9022a9dd4a7d70b4c23a96be76ec44a75ad8d4ecfa"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_es36vsgj",
+                "name": "submit_decision",
+                "args": {
+                  "category": "order_status",
+                  "action": "auto_reply",
+                  "draft_reply": "Your order ORD-100114 is shipped via Canada Post and tracking may not update until the package clears customs. International shipping typically takes 7 to 21 business days. You can check the latest status using the tracking number LX123456789US. If you have any further questions, feel free to ask!",
+                  "confidence": 0.95,
+                  "reason": "The order is shipped and international shipping times are within the expected range according to the policy.",
+                  "follow_ups": []
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 249,
+            "output_tokens": 135,
+            "cache_read_tokens": 1792
+          },
+          "ID": "resp_835260",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 3512,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "d23c0e11c0a46cff341c05c384aab4a6585e5c7b7d71599558373c9b859cb79f"
+      }
+    ],
+    "HD-2012#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_mxs830hk",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100115"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 86,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_30699",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 800,
+        "request_summary": [],
+        "fingerprint": "019896dd296657e219061ff93c04cedaadd529618ab44d4176adf281cb4cbf82"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_as87udts",
+                "name": "search_policy",
+                "args": {
+                  "query": "peeling print refund"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 270,
+            "output_tokens": 23,
+            "cache_read_tokens": 1605
+          },
+          "ID": "resp_441542",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 969,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "6ae1124de2904dd85b007d32915da0cd25a831674c29d2280517aa14e063559a"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_rhb0da16",
+                "name": "submit_decision",
+                "args": {
+                  "reason": "The customer reported peeling print on T-shirts, which may qualify as a misprint. They requested a refund, which is allowed under our policies.",
+                  "follow_ups": [],
+                  "category": "refund_request",
+                  "action": "auto_reply",
+                  "draft_reply": "We’re sorry to hear that the print on your T-shirts started peeling after the first wash. According to our policies, if an order arrives with a misprint or damage, the customer may choose a refund instead of a free reprint. Please note that refunds take 5 to 10 business days to process and appear on the original payment method. If you’d like to proceed with a refund, we’ll need to review your request and confirm the details.",
+                  "confidence": 0.95
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 316,
+            "output_tokens": 166,
+            "cache_read_tokens": 1871
+          },
+          "ID": "resp_540283",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 4391,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "ef56ced758d6cc5b905b16477a546c47b2b6219f2070e4535b27a9d90ac29de5"
+      }
+    ],
+    "HD-2013#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_chzli8bc",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100102"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 65,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_209631",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 864,
+        "request_summary": [],
+        "fingerprint": "5b05e9e321a9c5c71fd61952e8a9fb3f59a5ae4930c1c24660d9b55dbaff7c6b"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_d0mpnwfd",
+                "name": "search_policy",
+                "args": {
+                  "query": "change order quantity"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 140,
+            "output_tokens": 22,
+            "cache_read_tokens": 1584
+          },
+          "ID": "resp_694978",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 708,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "92448f2b569055bb4b8e36c313b7e66564160af95702da0ebc6c685ec7485f2d"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_8q6ezsm1",
+                "name": "submit_decision",
+                "args": {
+                  "category": "order_change",
+                  "action": "draft_for_review",
+                  "draft_reply": "We can change the quantity of your order as long as it hasn't started production. Your order is currently in production, so we cannot make the change. You can place a new order for 200 tote bags with the same design instead.",
+                  "confidence": 0.9,
+                  "reason": "The customer wants to change the quantity of an order that is already in production. According to the policy, changes cannot be made once production starts.",
+                  "follow_ups": []
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 271,
+            "output_tokens": 122,
+            "cache_read_tokens": 1720
+          },
+          "ID": "resp_398332",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 3369,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "bb1af9efd3560d522b1efe1e36db30e7ff523c1a5b178cb78a27201c0bedf52b"
+      }
+    ],
+    "HD-2014#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_0gdofqeh",
+                "name": "search_policy",
+                "args": {
+                  "query": "shipping delay"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 47,
+            "output_tokens": 21,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_666268",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 649,
+        "request_summary": [],
+        "fingerprint": "6d9b4f2d315e0f21be0fa434c2ba889ffa248ad6ba42a8f6c9c1d193179a5fda"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_um4xggv5",
+                "name": "submit_decision",
+                "args": {
+                  "confidence": 0.9,
+                  "reason": "The customer is asking about a shipping delay, and the policy states that we will trace the package if it hasn't arrived within 10 business days and reship if it hasn't arrived within 15 business days.",
+                  "follow_ups": [],
+                  "category": "shipping_delay",
+                  "action": "auto_reply",
+                  "draft_reply": "We understand your concern. If your order has not arrived 10 business days after it shipped, we will open a trace with the carrier. If it has not arrived 15 business days after it shipped, we will reprint and reship the order for free. Please provide your order number so we can check the status."
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 290,
+            "output_tokens": 163,
+            "cache_read_tokens": 1566
+          },
+          "ID": "resp_343469",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 4409,
+        "request_summary": [
+          "search_policy"
+        ],
+        "fingerprint": "cdd0f1b68b30f36934db000d8629a13d64f7b0e6b2a0a4da9090153937c16ab4"
+      }
+    ],
+    "HD-2015#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_ahivdaxt",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-10105"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 71,
+            "output_tokens": 27,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_889626",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 727,
+        "request_summary": [],
+        "fingerprint": "0081c8624b200159dafe6212b34af7569695686e95693ad117af8fa8e0d95f31"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_q9k469d9",
+                "name": "search_policy",
+                "args": {
+                  "query": "misprint"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 85,
+            "output_tokens": 21,
+            "cache_read_tokens": 1590
+          },
+          "ID": "resp_32554",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 659,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "b67010cfb4a4a0599675c329ae1e05f3dd769a2033be33c3a699b7faceced24f"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_wjb61bqc",
+                "name": "submit_decision",
+                "args": {
+                  "category": "damaged_or_misprint",
+                  "action": "auto_reply",
+                  "draft_reply": "We apologize for the misprint on your mugs from order ORD-10105. Please send us a photo of the issue, and we will arrange for a free reprint. Thank you for your understanding!",
+                  "confidence": 0.9,
+                  "reason": "The customer reported a misprint on their order, which falls under our policy for free reprints. A photo was mentioned, so we can proceed with a reprint.",
+                  "follow_ups": [
+                    {
+                      "order_number": "ORD-10105",
+                      "reason": "misprint",
+                      "type": "reprint_request"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 223,
+            "output_tokens": 146,
+            "cache_read_tokens": 1671
+          },
+          "ID": "resp_185521",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 3880,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "705b1d40eb752bac15e78461ba35d1e4d01b1d51d9d936d2821158ada604ceeb"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_wwg3c4e3",
+                "name": "submit_decision",
+                "args": {
+                  "action": "auto_reply",
+                  "category": "damaged_or_misprint",
+                  "confidence": 0.9,
+                  "draft_reply": "We apologize for the misprint on your mugs from order ORD-10105. Please send us a photo of the issue, and we will arrange for a free reprint. Thank you for your understanding!",
+                  "follow_ups": [],
+                  "reason": "The customer reported a misprint on their order, which falls under our policy for free reprints. A photo was mentioned, so we can proceed with a reprint."
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 196,
+            "output_tokens": 124,
+            "cache_read_tokens": 1890
+          },
+          "ID": "resp_341390",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 3334,
+        "request_summary": [
+          "get_order",
+          "search_policy",
+          "submit_decision"
+        ],
+        "fingerprint": "f6f6ab01c6534b9df3c71a38a55c5bd56a32ebf84b7a52a9327bb16098da1d6f"
+      }
+    ],
+    "HD-2016#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_1tm25gc6",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100103"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 61,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_486012",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 715,
+        "request_summary": [],
+        "fingerprint": "3f766d24fb9525a11e98e8a3faa97dad879c7e0e1a5bc9bebe0b76da3c3c5e63"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_8192kc5a",
+                "name": "search_policy",
+                "args": {
+                  "query": "order status tracking"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 79,
+            "output_tokens": 22,
+            "cache_read_tokens": 1580
+          },
+          "ID": "resp_519395",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 726,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "a6b6ba27a47e0df7145ebbc9ba9f0aae496c8072159f5b2481d91b5cf85a4e93"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_14zuqrmh",
+                "name": "submit_decision",
+                "args": {
+                  "follow_ups": [],
+                  "category": "order_status",
+                  "action": "auto_reply",
+                  "draft_reply": "We only share order details when the request comes from the email address used to place the order. Could you please confirm that you are the customer who placed this order? If so, we can provide the latest status.",
+                  "confidence": 0.9,
+                  "reason": "The customer claimed an order number, but it was not found for their email. The policy states that order details are only shared with the email used to place the order."
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 279,
+            "output_tokens": 119,
+            "cache_read_tokens": 1655
+          },
+          "ID": "resp_748925",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 3264,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "fb34227cd8858de62d8bebadfdd812586a3f7629c96bb586bf6b047e894c4a3f"
+      }
+    ],
+    "HD-2017#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_2nr3prkj",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100107"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 65,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_152697",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 790,
+        "request_summary": [],
+        "fingerprint": "6e3b7e9f127e1bb3ffecb710124662d218a9075db92b02282188ecf1653358c9"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_kjpalfgk",
+                "name": "search_policy",
+                "args": {
+                  "query": "damaged reprint"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 273,
+            "output_tokens": 22,
+            "cache_read_tokens": 1584
+          },
+          "ID": "resp_155989",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 999,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "6280c6a97514dd65668545fbb2de90f719dba669d0ed0945535bedb26250cf04"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_i9gok0fn",
+                "name": "submit_decision",
+                "args": {
+                  "category": "damaged_or_misprint",
+                  "action": "auto_reply",
+                  "draft_reply": "We're sorry to hear that your prints arrived water damaged. According to our policy, we can reprint them for free if the issue was our mistake. Please include a photo of the damaged prints, and we'll process a reprint as soon as possible. No return is needed.",
+                  "confidence": 0.95,
+                  "reason": "The customer reported water damage to prints in a delivered order, which falls under the damaged or misprint category. The policy allows for a free reprint if the issue was our mistake, and the customer must include a photo.",
+                  "follow_ups": [
+                    {
+                      "order_number": "ORD-100107",
+                      "reason": "damaged",
+                      "type": "reprint_request"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 308,
+            "output_tokens": 169,
+            "cache_read_tokens": 1853
+          },
+          "ID": "resp_559859",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 4549,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "b53adf05d6afcfd9287bf2e4de25e8d6764c84fb4a68bc3a026b5eeef612241c"
+      }
+    ],
+    "HD-2018#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_aycgahco",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100110"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 71,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_549303",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 835,
+        "request_summary": [],
+        "fingerprint": "c9f989b906d183ff365627d2bf826211f924f47b16a6fed0a08607ed270be82c"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_5ifszsnm",
+                "name": "search_policy",
+                "args": {
+                  "query": "refund"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 143,
+            "output_tokens": 20,
+            "cache_read_tokens": 1590
+          },
+          "ID": "resp_822705",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 725,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "532e3f3c744c5c850966de0585c499932c236ef9ede7b24236e130c92707c587"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_cu13gubs",
+                "name": "submit_decision",
+                "args": {
+                  "follow_ups": [
+                    {
+                      "order_number": "ORD-100110",
+                      "reason": "customer_request",
+                      "type": "refund_review"
+                    }
+                  ],
+                  "category": "refund_request",
+                  "action": "draft_for_review",
+                  "draft_reply": "We understand you've changed your mind about the refund. Our team will review your request and get back to you with the next steps. Please note that any refund above $250 requires approval from a support lead.",
+                  "confidence": 0.9,
+                  "reason": "The customer requested a refund for order ORD-100110 but changed their mind. The refund policy states that refunds above $250 require approval from a support lead."
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 299,
+            "output_tokens": 147,
+            "cache_read_tokens": 1729
+          },
+          "ID": "resp_872930",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 4077,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "3e3e2856674e2d0985926c2269e1ded5b6cc32223841c405b9995804ca2400d6"
+      }
+    ],
+    "HD-2019#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_w4kx429f",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100111"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 65,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_609242",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 869,
+        "request_summary": [],
+        "fingerprint": "fa2849b4759131e20032b038b2511f9c24885a3a69e58e6c16d9d4f7905b755a"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_20foin8i",
+                "name": "search_policy",
+                "args": {
+                  "query": "add design to order"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 222,
+            "output_tokens": 23,
+            "cache_read_tokens": 1584
+          },
+          "ID": "resp_638371",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 875,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "57f01ebc201d20539eb3d4ebec7f5b4eba39f0b088b82c4e773fe486283ba36f"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_otbvio8v",
+                "name": "submit_decision",
+                "args": {
+                  "category": "order_status",
+                  "action": "auto_reply",
+                  "draft_reply": "Your order ORD-100111 has been shipped via USPS with tracking number 9400111899223344550011. It was shipped on September 25, 2026. You can track it using the carrier's website. Regarding adding a second design, we can only make changes to an order before production starts. Since your order has already been shipped, you'll need to place a new order for the additional design.",
+                  "confidence": 0.95,
+                  "reason": "The order is shipped, so changes cannot be made. The customer can track the order and place a new order for additional designs.",
+                  "follow_ups": []
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 280,
+            "output_tokens": 175,
+            "cache_read_tokens": 1802
+          },
+          "ID": "resp_870066",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 4695,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "142c15084e974d166536beefa944fd5e3fe8d3b1f12f2bc170cf757af728b5ee"
+      }
+    ],
+    "HD-2021#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_rkpazfr0",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100108"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 80,
+            "output_tokens": 28,
+            "cache_read_tokens": 1522
+          },
+          "ID": "resp_188480",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 853,
+        "request_summary": [],
+        "fingerprint": "b918956ecef7b1c676f8da76352102afea6d8cc640cbe9a40a14d420633a4f3a"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_s6jjaclm",
+                "name": "search_policy",
+                "args": {
+                  "query": "wrong logo colors refund"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 265,
+            "output_tokens": 23,
+            "cache_read_tokens": 1598
+          },
+          "ID": "resp_641715",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 932,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "c2dcdd13d3f55f8a2199001e3ca98d63c48732530b002ea046898403b5571ad9"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_tn5mclhl",
+                "name": "submit_decision",
+                "args": {
+                  "category": "refund_request",
+                  "action": "draft_for_review",
+                  "draft_reply": "We’re sorry to hear that the T-shirts arrived with the wrong logo colors. According to our policies, you may choose a refund instead of a free reprint. A refund will be processed and sent back to your original payment method. It may take 5 to 10 business days to appear. Since the refund is above 250 USD, it will need approval from a support lead. Please let us know if you’d like to proceed with a refund.",
+                  "confidence": 0.95,
+                  "reason": "The customer reported that all 1000 T-shirts from ORD-100108 have the wrong logo colors, which is a misprint. The customer is requesting a refund, which is covered under the refund policy. A refund review is needed.",
+                  "follow_ups": [
+                    {
+                      "order_number": "ORD-100108",
+                      "reason": "misprint",
+                      "type": "refund_review"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 300,
+            "output_tokens": 214,
+            "cache_read_tokens": 1859
+          },
+          "ID": "resp_928130",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 5730,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "81639df50a49cff585d46daecef7154f1df5c2b321b8435163fa91c17d708282"
+      }
+    ],
+    "HD-2023#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_2pa00ckc",
+                "name": "submit_decision",
+                "args": {
+                  "category": "general",
+                  "action": "escalate",
+                  "confidence": 0.99,
+                  "reason": "The customer claims they did not place an order and received a confirmation email for an order they did not place, which may indicate fraud or unauthorized use of their card.",
+                  "follow_ups": []
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 54,
+            "output_tokens": 80,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_265758",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2114,
+        "request_summary": [],
+        "fingerprint": "ec79994ad48d71e12d4c925105660cec49aa32b69686b614bffe7e75328c1554"
+      }
+    ],
+    "HD-2024#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_fg8kx504",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100104"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 64,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_692833",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 823,
+        "request_summary": [],
+        "fingerprint": "93654dd2ee92c61bffb0b61c125486fb8713ec03803d2d0fc65c3c909262a5e7"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_f1hf2ji4",
+                "name": "search_policy",
+                "args": {
+                  "query": "shipping delay"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 217,
+            "output_tokens": 21,
+            "cache_read_tokens": 1583
+          },
+          "ID": "resp_445302",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 790,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "c976cdb0b789b902be60950220391f914a5bd3e99d6e9f6ad4f188e9b1f9b3b0"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_6hy00swl",
+                "name": "submit_decision",
+                "args": {
+                  "category": "shipping_delay",
+                  "action": "escalate",
+                  "confidence": 0.95,
+                  "reason": "The order has been shipped for 17 business days and is still not delivered. According to the shipping delay policy, we should trace the package with the carrier and, if not found, reprint and reship or refund the order.",
+                  "follow_ups": []
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 290,
+            "output_tokens": 87,
+            "cache_read_tokens": 1796
+          },
+          "ID": "resp_226954",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2597,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "b0228d47762f4c179b6192a1e763962c4d8077dcfd56d98276760028c70d178d"
+      }
+    ],
+    "HD-2025#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_ca4pmen6",
+                "name": "search_policy",
+                "args": {
+                  "query": "bulk order pricing"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 54,
+            "output_tokens": 22,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_2949",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 606,
+        "request_summary": [],
+        "fingerprint": "f84367dc3657ea47516771a1b66ae5a47af942e06850728337b919eb27054c09"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_wrhpr66z",
+                "name": "submit_decision",
+                "args": {
+                  "follow_ups": [],
+                  "category": "general",
+                  "action": "escalate",
+                  "draft_reply": "We can't provide custom pricing or quotes over email. Please contact our sales team directly for bulk order pricing details.",
+                  "confidence": 0.9,
+                  "reason": "The customer requested custom pricing for a bulk order, which requires escalation to the sales team."
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 279,
+            "output_tokens": 82,
+            "cache_read_tokens": 1573
+          },
+          "ID": "resp_329617",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2508,
+        "request_summary": [
+          "search_policy"
+        ],
+        "fingerprint": "ca2f99d6aaae5a4af62624d394ea0f2cd26cbc6815891dfe6721930dd7bbdcb1"
+      }
+    ],
+    "HD-2026#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_zbjxfnw0",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100101"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 78,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_859991",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 733,
+        "request_summary": [],
+        "fingerprint": "744e9f2993e2d12128ba522e25a9fab5b6ee736291352a0fbe094599c4245556"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_wbyjzntx",
+                "name": "search_policy",
+                "args": {
+                  "query": "full refund"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 143,
+            "output_tokens": 21,
+            "cache_read_tokens": 1597
+          },
+          "ID": "resp_565123",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 844,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "70c96233b732cb04c2a830fae4ae3dfd832b51d926ba9edf40d68d59248e4369"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_0mn2nrn3",
+                "name": "submit_decision",
+                "args": {
+                  "action": "escalate",
+                  "draft_reply": "We cannot issue refunds above 250 USD without approval from a support lead. Please contact our support team for further assistance.",
+                  "confidence": 0.9,
+                  "reason": "The customer requested a full refund above 250 USD, which requires approval from a support lead according to the refund policy.",
+                  "follow_ups": [],
+                  "category": "refund_request"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 300,
+            "output_tokens": 94,
+            "cache_read_tokens": 1736
+          },
+          "ID": "resp_634580",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2694,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "a525f464e1ceea841488f397de742a6203b5180c28147e8a5771c83acac97de9"
+      }
+    ],
+    "HD-2027#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_axxeu8df",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100103"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 80,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_358667",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 904,
+        "request_summary": [],
+        "fingerprint": "bdf33f761aa0dd143fe8885658f4907933ae9258dece91d8815643a8a6cdccda"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_qzuevyf9",
+                "name": "search_policy",
+                "args": {
+                  "query": "shipping tracking"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 220,
+            "output_tokens": 21,
+            "cache_read_tokens": 1599
+          },
+          "ID": "resp_698785",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 782,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "3809a4be22f79e993ef9a45e6470eac59b168c098129bc1e9f7e3817fd5fad29"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_fguddw72",
+                "name": "submit_decision",
+                "args": {
+                  "category": "order_status",
+                  "action": "auto_reply",
+                  "draft_reply": "Your order ORD-100103 has been shipped via USPS with tracking number 9400111899223344556677. It should arrive within 3 to 7 business days. You can track it directly with the carrier. If you haven't received it within 10 business days, please let us know and we'll assist further.",
+                  "confidence": 0.9,
+                  "reason": "The order was shipped and the tracking information is available. The customer is VIP, so we promise a free reprint if needed.",
+                  "follow_ups": []
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 290,
+            "output_tokens": 153,
+            "cache_read_tokens": 1815
+          },
+          "ID": "resp_586290",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 4219,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "9499071409436c6368acd3cff92e33bb585f173b8cbf6fef1a4517616edb3965"
+      }
+    ],
+    "HD-2028#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_8olgqysg",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100108"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 69,
+            "output_tokens": 28,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_863180",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 902,
+        "request_summary": [],
+        "fingerprint": "e215912b95083b12a7cdfcc87bebec89e0a314e7492ad4ec6f76f94258455873"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_zuv2iuse",
+                "name": "search_policy",
+                "args": {
+                  "query": "order number not found"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 79,
+            "output_tokens": 23,
+            "cache_read_tokens": 1588
+          },
+          "ID": "resp_865643",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 724,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "86236ae653a40774ea4024e2c64904f89758e745e78195f4d46bd6dd7feb6db2"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_a5ipx69o",
+                "name": "submit_decision",
+                "args": {
+                  "action": "escalate",
+                  "draft_reply": "We cannot confirm or deny the existence of order ORD-100108 as the request was not made from the email address associated with the order. Please ensure you are using the correct email address or contact us from the email used to place the order.",
+                  "confidence": 0.99,
+                  "reason": "The customer claimed an order number but the system could not find it for their email. This may indicate an incorrect order number or a different email was used to place the order.",
+                  "follow_ups": [],
+                  "category": "general"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 280,
+            "output_tokens": 130,
+            "cache_read_tokens": 1663
+          },
+          "ID": "resp_773708",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 3706,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "6fde84df0a8812041c94dc59c8bf922c793a6abab0cf721ae81f0337c36ed0c5"
+      }
+    ],
+    "HD-2029#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_x44uoxdo",
+                "name": "submit_decision",
+                "args": {
+                  "confidence": 1,
+                  "reason": "The customer's request is general and does not require escalation or further action.",
+                  "follow_ups": [],
+                  "category": "general",
+                  "action": "auto_reply",
+                  "draft_reply": "Thank you for your message. I'm here to help with any questions or issues you may have. If you have any further questions, feel free to ask!"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 64,
+            "output_tokens": 96,
+            "cache_read_tokens": 1523
+          },
+          "ID": "resp_390226",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 2482,
+        "request_summary": [],
+        "fingerprint": "325d721be9e41c741c0aa806770ca2883854d3e911b5a075e1af42e5bad28d47"
+      }
+    ],
+    "HD-2030#1": [
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_9l74uyjz",
+                "name": "get_order",
+                "args": {
+                  "order_number": "ORD-100105"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 87,
+            "output_tokens": 28,
+            "cache_read_tokens": 1522
+          },
+          "ID": "resp_624732",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 876,
+        "request_summary": [],
+        "fingerprint": "8c4d4853c3b0287f836278ec4b3c234e696bf244221c1336ef3e47c73c1d8fb5"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_6etknz1q",
+                "name": "search_policy",
+                "args": {
+                  "query": "smudged print"
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 273,
+            "output_tokens": 23,
+            "cache_read_tokens": 1605
+          },
+          "ID": "resp_34038",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 951,
+        "request_summary": [
+          "get_order"
+        ],
+        "fingerprint": "f2e43c0dcad556ce84936baef07b78656e9c43771d213365b6b1069c5127bbd7"
+      },
+      {
+        "response": {
+          "Message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_od3eeypm",
+                "name": "submit_decision",
+                "args": {
+                  "category": "damaged_or_misprint",
+                  "action": "auto_reply",
+                  "draft_reply": "We're sorry to hear that some mugs in your order have smudged prints. According to our policy, we offer free reprints for misprints or damaged orders. Please provide a photo of the smudged print, and we'll process a reprint for you. Thank you for your understanding!",
+                  "confidence": 0.95,
+                  "reason": "The customer reported a smudged print on mugs in their order, which falls under the misprint category. The policy states that free reprints are available for misprints, and the customer must provide a photo.",
+                  "follow_ups": [
+                    {
+                      "order_number": "ORD-100105",
+                      "reason": "misprint",
+                      "type": "reprint_request"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "Usage": {
+            "input_tokens": 308,
+            "output_tokens": 176,
+            "cache_read_tokens": 1874
+          },
+          "ID": "resp_946180",
+          "Model": "qwen3:8b",
+          "StopReason": "completed"
+        },
+        "latency_ms": 4910,
+        "request_summary": [
+          "get_order",
+          "search_policy"
+        ],
+        "fingerprint": "61bde82d3f58ca353226d86b7b54b624fc27297965fa0d514f39c3a18e7f7539"
+      }
+    ]
+  }
+}

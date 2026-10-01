@@ -1,0 +1,1 @@
+{"id":"resp_9","status":"failed","error":{"code":"server_error","message":"The model failed to generate a response."},"incomplete_details":null,"model":"gpt-6.1-sol","output":[],"usage":{"input_tokens":80,"output_tokens":3}}

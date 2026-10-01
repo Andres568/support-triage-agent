@@ -1,0 +1,1 @@
+{"id":"resp_2","object":"response","status":"completed","model":"qwen3:8b","output":[{"type":"message","id":"msg_1","role":"assistant","status":"completed","content":[{"type":"output_text","text":"Your order ","annotations":[]},{"type":"output_text","text":"shipped.","annotations":[]}]}],"usage":{"input_tokens":300,"output_tokens":8,"total_tokens":308}}

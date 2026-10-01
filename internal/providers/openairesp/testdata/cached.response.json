@@ -1,0 +1,1 @@
+{"id":"resp_7","status":"completed","model":"gpt-6.1-sol","output":[{"type":"message","id":"msg_5","role":"assistant","content":[{"type":"output_text","text":"ok"}]}],"usage":{"input_tokens":2000,"input_tokens_details":{"cached_tokens":1500},"output_tokens":100,"output_tokens_details":{"reasoning_tokens":40},"total_tokens":2100}}

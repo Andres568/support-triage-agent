@@ -1,0 +1,14 @@
+{
+  "id": "msg_01tools",
+  "type": "message",
+  "role": "assistant",
+  "model": "claude-sonnet-5-5",
+  "content": [
+    {"type": "text", "text": "Let me check."},
+    {"type": "tool_use", "id": "toolu_01A", "name": "get_order", "input": {"order_number": "ORD-100103"}},
+    {"type": "tool_use", "id": "toolu_01B", "name": "search_policy", "input": {"query": "late delivery"}}
+  ],
+  "stop_reason": "tool_use",
+  "stop_sequence": null,
+  "usage": {"input_tokens": 300, "output_tokens": 60}
+}

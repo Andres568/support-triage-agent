@@ -1,0 +1,66 @@
+# Thin by design: all logic lives in `make check`, which runs identically on
+# a laptop (`nix develop -c make check`). This file only prepares the runner.
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      # Actions are pinned to commit SHAs (tags can be moved); the tag is noted for humans.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0 # gitleaks scans every commit, not just the tip
+
+      - uses: cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24 # v31.11.1
+        with:
+          # Keep the devShell's inputs in the store so the cache can restore them.
+          extra_nix_config: |
+            keep-env-derivations = true
+            keep-outputs = true
+
+      - uses: nix-community/cache-nix-action@7df957e333c1e5da7721f60227dbba6d06080569 # v7.0.2
+        with:
+          primary-key: nix-${{ runner.os }}-${{ hashFiles('flake.nix', 'flake.lock') }}
+          restore-prefixes-first-match: nix-${{ runner.os }}-
+          gc-max-store-size-linux: 3G
+
+      # Terraform providers and tflint plugins that `make tf-check` downloads.
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            ~/.terraform.d/plugin-cache
+            ~/.tflint.d
+          key: tf-${{ runner.os }}-${{ hashFiles('infra/terraform/.terraform.lock.hcl', 'infra/terraform/.tflint.hcl') }}
+          restore-keys: tf-${{ runner.os }}-
+
+      # trivy's vulnerability and misconfiguration databases: restored from
+      # the newest cache, saved under a new key each run so they stay fresh.
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.cache/trivy
+          key: trivy-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: trivy-${{ runner.os }}-
+
+      # The only step that sees the token: tflint --init downloads the google
+      # ruleset from GitHub releases, and the token avoids anonymous rate
+      # limits. make check's own tflint --init then finds it installed.
+      - name: tflint plugins
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: nix develop --command tflint --chdir=infra/terraform --init
+
+      - name: make check
+        run: nix develop --command make check

@@ -1,0 +1,15 @@
+# gitleaks (make lint; CI checks out full history): the default rules, plus
+# the known false positives. Allowlisted by value, not by path, so a real
+# secret pasted into the same files is still caught.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Terraform tests plan against a mock provider with a placeholder password"
+regexTarget = "secret"
+regexes = ['''^"?not-a-real-password"?$''']
+
+[[allowlists]]
+description = "Model ids in the provider registry (e.g. claude-haiku-4-5-20251001) sit next to KeyEnv and look like keys"
+regexTarget = "secret"
+regexes = ['''^"?(claude|gpt|grok)-[a-z0-9.-]+"?$''']

@@ -1,0 +1,101 @@
+{
+  "model": "claude-sonnet-5-5",
+  "max_tokens": 1024,
+  "system": "You are a support agent.",
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Where is order ORD-100103?"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Let me check."
+        },
+        {
+          "type": "tool_use",
+          "id": "toolu_01A",
+          "name": "get_order",
+          "input": {
+            "order_number": "ORD-100103"
+          }
+        },
+        {
+          "type": "tool_use",
+          "id": "toolu_01B",
+          "name": "search_policy",
+          "input": {}
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01A",
+          "content": "{\"status\":\"shipped\"}",
+          "is_error": false
+        },
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01B",
+          "content": "invalid arguments",
+          "is_error": true
+        },
+        {
+          "type": "text",
+          "text": "Anything else?"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_use",
+          "id": "toolu_01C",
+          "name": "get_order",
+          "input": {
+            "order_number": "ORD-100104"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01C",
+          "content": "not found",
+          "is_error": false
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "name": "get_order",
+      "description": "Look up an order.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "order_number": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "order_number"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Keep the build context small and free of secrets.
+.git
+.direnv
+.gcloud
+.gh
+.env
+.env.*
+bin
+docs
+evals
+infra

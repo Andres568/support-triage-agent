@@ -1,0 +1,30 @@
+# Secrets and local overrides
+.env
+.env.*
+!.env.example
+
+# Per-project tool state
+.direnv/
+.gcloud/
+# Per-project GitHub CLI credentials (never commit)
+.gh/
+# Agent working notes (local only, never committed)
+.claude/agent-memory/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+
+# Go
+/bin/
+*.test
+*.out
+coverage.*
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/

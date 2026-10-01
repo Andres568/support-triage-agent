@@ -1,0 +1,11 @@
+{
+  "HD-2004/address_change": "source=agent proposed=not_eligible final=needs_human baseline=eligible error=",
+  "HD-2005/reprint_request": "source=agent proposed=eligible final=eligible baseline=eligible error=",
+  "HD-2006/reprint_request": "source=agent proposed=eligible final=eligible baseline=eligible error=",
+  "HD-2007/reprint_request": "source=agent proposed=eligible final=eligible baseline=eligible error=",
+  "HD-2012/refund_review": "source=agent_limit proposed= final=needs_human baseline=eligible error=",
+  "HD-2017/reprint_request": "source=agent proposed=not_eligible final=not_eligible baseline=not_eligible error=",
+  "HD-2018/refund_review": "source=agent proposed=not_eligible final=not_eligible baseline=not_eligible error=",
+  "HD-2019/address_change": "source=agent proposed=not_eligible final=not_eligible baseline=not_eligible error=",
+  "HD-2021/refund_review": "source=agent proposed=eligible final=needs_human baseline=needs_human error="
+}

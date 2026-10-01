@@ -1,0 +1,112 @@
+# Local stand-in for the GCP runtime. See docs/adr/0001-local-parity.md.
+# Every port binds to 127.0.0.1 only; host ports use this project's 1xxxx block.
+
+# The app image: commerce-api, worker and migrate under /app/ (see Dockerfile). Services pick a
+# binary with `entrypoint`; the shared image name means one build.
+x-app: &app
+  build: .
+  image: support-triage-agent:local
+
+services:
+  postgres:
+    # Stand-in for Cloud SQL for PostgreSQL 18. Debian (glibc) rather than
+    # Alpine (musl) so collation and full-text search behave like Cloud SQL.
+    # Pinned by digest: a re-pushed tag can't change what we run.
+    image: postgres:18.6@sha256:5a5a84b19854a9ffaa54082c166ff4ec27473a361e496e5ea167f298f2da9722
+    environment:
+      # Local-only credentials, matching DATABASE_URL in .env.example.
+      POSTGRES_USER: triage
+      POSTGRES_PASSWORD: triage
+      POSTGRES_DB: triage
+    ports:
+      - "127.0.0.1:15432:5432"
+    volumes:
+      # Postgres 18 images keep data under /var/lib/postgresql/<major>/docker,
+      # so the volume mounts the parent directory (eases future major upgrades).
+      - pgdata:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U triage -d triage"]
+      interval: 2s
+      timeout: 3s
+      retries: 15
+
+  commerce-api:
+    # Internal read-only API the agents' tools call (stand-in for a Cloud Run service).
+    <<: *app
+    entrypoint: ["/app/commerce-api"]
+    environment:
+      DATABASE_URL: postgres://triage:triage@postgres:5432/triage?sslmode=disable
+    ports:
+      - "127.0.0.1:18080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "/app/commerce-api", "healthcheck"]
+      interval: 2s
+      timeout: 3s
+      retries: 15
+
+  migrate:
+    # One-shot, like the Cloud Run migrate job: embedded migrations, goose
+    # library (cmd/migrate). Dev keeps `make migrate` (goose CLI); both use
+    # the same version table, so either can run first. In the agents
+    # profile because `up --wait` counts an exited one-shot as a failure.
+    profiles: [agents]
+    <<: *app
+    entrypoint: ["/app/migrate", "up"]
+    environment:
+      DATABASE_URL: postgres://triage:triage@postgres:5432/triage?sslmode=disable
+    restart: "no"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  worker-scheduler:
+    # Stand-in for Cloud Scheduler firing the two Cloud Run Jobs: every
+    # SCHEDULE_EVERY it runs the support then the orders batch, each as a
+    # fresh subprocess (`worker schedule`, cmd/worker/schedule.go).
+    # Behind the `agents` profile: `make up` and CI never need Ollama.
+    # Start it with `make agents-up` (Ollama on the host: `make ollama`).
+    profiles: [agents]
+    <<: *app
+    entrypoint: ["/app/worker", "schedule", "-every=${SCHEDULE_EVERY:-2m}", "-jobs=support,orders", "-overlap=skip", "-grace=30s"]
+    # SIGTERM reaches the running job, which gets -grace to finish its item;
+    # compose must wait longer than that before SIGKILL.
+    stop_grace_period: 45s
+    environment:
+      DATABASE_URL: postgres://triage:triage@postgres:5432/triage?sslmode=disable
+      COMMERCE_API_URL: http://commerce-api:8080
+      MODEL: ${AGENT_MODEL:-ollama/qwen3:8b}
+      BATCH_SIZE: ${AGENT_BATCH_SIZE:-20}
+      OLLAMA_BASE_URL: http://host.docker.internal:11434/v1
+      # Shadow: every decision is recorded, nothing is auto-replied.
+      AUTONOMY: shadow
+      # Empty (AGENT_OTEL_ENDPOINT=) disables tracing.
+      OTEL_EXPORTER_OTLP_ENDPOINT: ${AGENT_OTEL_ENDPOINT-http://jaeger:4317}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      commerce-api:
+        condition: service_healthy
+      jaeger:
+        condition: service_started
+        required: false # only when the tracing profile is on
+
+  jaeger:
+    # Trace backend for local runs (stand-in for Cloud Trace): the workers
+    # export OTLP when OTEL_EXPORTER_OTLP_ENDPOINT is set. UI on :16686.
+    # Behind a profile: `make up` and the checks never need it; `make
+    # tracing` starts it. The worker's service.name is fixed in code
+    # (triage-worker), so its traces are under that name here.
+    profiles: [tracing]
+    image: jaegertracing/jaeger:2.21.0@sha256:3d0ac795ff98aa04d1be04311d2dac6c25b4bfc8322dc02e53bc5b170c5018c3
+    ports:
+      - "127.0.0.1:16686:16686" # UI and query API
+      - "127.0.0.1:14317:4317"  # OTLP gRPC
+      - "127.0.0.1:14318:4318"  # OTLP HTTP
+
+volumes:
+  pgdata:

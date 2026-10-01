@@ -1,0 +1,356 @@
+{
+  "agent": "support",
+  "model": "ollama/qwen3:8b",
+  "mode": "live",
+  "prompt_sha": "b567de98d750756bbd9039a19e7a6fbf4aeb87bf3d1944dd49c5e93f547c1416",
+  "autonomy": "auto",
+  "cases": [
+    "HD-2001",
+    "HD-2002",
+    "HD-2003",
+    "HD-2004",
+    "HD-2005",
+    "HD-2006",
+    "HD-2007",
+    "HD-2008",
+    "HD-2009",
+    "HD-2010",
+    "HD-2011",
+    "HD-2012",
+    "HD-2013",
+    "HD-2014",
+    "HD-2015",
+    "HD-2016",
+    "HD-2017",
+    "HD-2018",
+    "HD-2019",
+    "HD-2020",
+    "HD-2021",
+    "HD-2022",
+    "HD-2023",
+    "HD-2024",
+    "HD-2025",
+    "HD-2026",
+    "HD-2027",
+    "HD-2028",
+    "HD-2029",
+    "HD-2030"
+  ],
+  "runs": [
+    {
+      "rates": {
+        "action_accuracy_final": {
+          "k": 28,
+          "n": 30,
+          "rate": 0.9333,
+          "ci_lo": 0.7868,
+          "ci_hi": 0.9815
+        },
+        "action_accuracy_proposed": {
+          "k": 17,
+          "n": 28,
+          "rate": 0.6071,
+          "ci_lo": 0.4241,
+          "ci_hi": 0.7643
+        },
+        "category_accuracy": {
+          "k": 25,
+          "n": 28,
+          "rate": 0.8929,
+          "ci_lo": 0.728,
+          "ci_hi": 0.9629
+        },
+        "escalation_recall": {
+          "k": 8,
+          "n": 8,
+          "rate": 1,
+          "ci_lo": 0.6756,
+          "ci_hi": 1
+        },
+        "false_auto_reply_rate_final": {
+          "k": 0,
+          "n": 18,
+          "rate": 0,
+          "ci_lo": 0,
+          "ci_hi": 0.1759
+        },
+        "false_auto_reply_rate_proposed": {
+          "k": 7,
+          "n": 16,
+          "rate": 0.4375,
+          "ci_lo": 0.231,
+          "ci_hi": 0.6682
+        },
+        "follow_up_precision": {
+          "k": 5,
+          "n": 8,
+          "rate": 0.625,
+          "ci_lo": 0.3057,
+          "ci_hi": 0.8632
+        },
+        "follow_up_recall": {
+          "k": 5,
+          "n": 6,
+          "rate": 0.8333,
+          "ci_lo": 0.4365,
+          "ci_hi": 0.9699
+        },
+        "injection_pass_rate": {
+          "k": 5,
+          "n": 5,
+          "rate": 1,
+          "ci_lo": 0.5655,
+          "ci_hi": 1
+        },
+        "over_escalation_rate": {
+          "k": 1,
+          "n": 22,
+          "rate": 0.0455,
+          "ci_lo": 0.0081,
+          "ci_hi": 0.218
+        }
+      },
+      "counts": {
+        "agent_limit": 0,
+        "cache_read_tokens": 121332,
+        "correct": 27,
+        "cost_micros": 0,
+        "cost_per_correct_micros": 0,
+        "failed": 0,
+        "gate_prevented_false_auto_replies": 7,
+        "input_tokens": 12973,
+        "items": 30,
+        "no_proposal": 0,
+        "output_tokens": 5117,
+        "precheck": 2,
+        "tokens_per_correct": 5163
+      },
+      "latency": {
+        "p50_ms": 5183,
+        "p95_ms": 7723
+      }
+    },
+    {
+      "rates": {
+        "action_accuracy_final": {
+          "k": 28,
+          "n": 30,
+          "rate": 0.9333,
+          "ci_lo": 0.7868,
+          "ci_hi": 0.9815
+        },
+        "action_accuracy_proposed": {
+          "k": 17,
+          "n": 28,
+          "rate": 0.6071,
+          "ci_lo": 0.4241,
+          "ci_hi": 0.7643
+        },
+        "category_accuracy": {
+          "k": 25,
+          "n": 28,
+          "rate": 0.8929,
+          "ci_lo": 0.728,
+          "ci_hi": 0.9629
+        },
+        "escalation_recall": {
+          "k": 8,
+          "n": 8,
+          "rate": 1,
+          "ci_lo": 0.6756,
+          "ci_hi": 1
+        },
+        "false_auto_reply_rate_final": {
+          "k": 0,
+          "n": 18,
+          "rate": 0,
+          "ci_lo": 0,
+          "ci_hi": 0.1759
+        },
+        "false_auto_reply_rate_proposed": {
+          "k": 7,
+          "n": 16,
+          "rate": 0.4375,
+          "ci_lo": 0.231,
+          "ci_hi": 0.6682
+        },
+        "follow_up_precision": {
+          "k": 5,
+          "n": 8,
+          "rate": 0.625,
+          "ci_lo": 0.3057,
+          "ci_hi": 0.8632
+        },
+        "follow_up_recall": {
+          "k": 5,
+          "n": 6,
+          "rate": 0.8333,
+          "ci_lo": 0.4365,
+          "ci_hi": 0.9699
+        },
+        "injection_pass_rate": {
+          "k": 5,
+          "n": 5,
+          "rate": 1,
+          "ci_lo": 0.5655,
+          "ci_hi": 1
+        },
+        "over_escalation_rate": {
+          "k": 1,
+          "n": 22,
+          "rate": 0.0455,
+          "ci_lo": 0.0081,
+          "ci_hi": 0.218
+        }
+      },
+      "counts": {
+        "agent_limit": 0,
+        "cache_read_tokens": 121332,
+        "correct": 27,
+        "cost_micros": 0,
+        "cost_per_correct_micros": 0,
+        "failed": 0,
+        "gate_prevented_false_auto_replies": 7,
+        "input_tokens": 12973,
+        "items": 30,
+        "no_proposal": 0,
+        "output_tokens": 5117,
+        "precheck": 2,
+        "tokens_per_correct": 5163
+      },
+      "latency": {
+        "p50_ms": 5001,
+        "p95_ms": 7423
+      }
+    },
+    {
+      "rates": {
+        "action_accuracy_final": {
+          "k": 28,
+          "n": 30,
+          "rate": 0.9333,
+          "ci_lo": 0.7868,
+          "ci_hi": 0.9815
+        },
+        "action_accuracy_proposed": {
+          "k": 17,
+          "n": 28,
+          "rate": 0.6071,
+          "ci_lo": 0.4241,
+          "ci_hi": 0.7643
+        },
+        "category_accuracy": {
+          "k": 25,
+          "n": 28,
+          "rate": 0.8929,
+          "ci_lo": 0.728,
+          "ci_hi": 0.9629
+        },
+        "escalation_recall": {
+          "k": 8,
+          "n": 8,
+          "rate": 1,
+          "ci_lo": 0.6756,
+          "ci_hi": 1
+        },
+        "false_auto_reply_rate_final": {
+          "k": 0,
+          "n": 18,
+          "rate": 0,
+          "ci_lo": 0,
+          "ci_hi": 0.1759
+        },
+        "false_auto_reply_rate_proposed": {
+          "k": 7,
+          "n": 16,
+          "rate": 0.4375,
+          "ci_lo": 0.231,
+          "ci_hi": 0.6682
+        },
+        "follow_up_precision": {
+          "k": 5,
+          "n": 8,
+          "rate": 0.625,
+          "ci_lo": 0.3057,
+          "ci_hi": 0.8632
+        },
+        "follow_up_recall": {
+          "k": 5,
+          "n": 6,
+          "rate": 0.8333,
+          "ci_lo": 0.4365,
+          "ci_hi": 0.9699
+        },
+        "injection_pass_rate": {
+          "k": 5,
+          "n": 5,
+          "rate": 1,
+          "ci_lo": 0.5655,
+          "ci_hi": 1
+        },
+        "over_escalation_rate": {
+          "k": 1,
+          "n": 22,
+          "rate": 0.0455,
+          "ci_lo": 0.0081,
+          "ci_hi": 0.218
+        }
+      },
+      "counts": {
+        "agent_limit": 0,
+        "cache_read_tokens": 121332,
+        "correct": 27,
+        "cost_micros": 0,
+        "cost_per_correct_micros": 0,
+        "failed": 0,
+        "gate_prevented_false_auto_replies": 7,
+        "input_tokens": 12973,
+        "items": 30,
+        "no_proposal": 0,
+        "output_tokens": 5117,
+        "precheck": 2,
+        "tokens_per_correct": 5163
+      },
+      "latency": {
+        "p50_ms": 4921,
+        "p95_ms": 7363
+      }
+    }
+  ],
+  "mean": {
+    "action_accuracy_final": 0.9333,
+    "action_accuracy_proposed": 0.6071,
+    "category_accuracy": 0.8929,
+    "escalation_recall": 1,
+    "false_auto_reply_rate_final": 0,
+    "false_auto_reply_rate_proposed": 0.4375,
+    "follow_up_precision": 0.625,
+    "follow_up_recall": 0.8333,
+    "injection_pass_rate": 1,
+    "over_escalation_rate": 0.0455
+  },
+  "min": {
+    "action_accuracy_final": 0.9333,
+    "action_accuracy_proposed": 0.6071,
+    "category_accuracy": 0.8929,
+    "escalation_recall": 1,
+    "false_auto_reply_rate_final": 0,
+    "false_auto_reply_rate_proposed": 0.4375,
+    "follow_up_precision": 0.625,
+    "follow_up_recall": 0.8333,
+    "injection_pass_rate": 1,
+    "over_escalation_rate": 0.0455
+  },
+  "max": {
+    "action_accuracy_final": 0.9333,
+    "action_accuracy_proposed": 0.6071,
+    "category_accuracy": 0.8929,
+    "escalation_recall": 1,
+    "false_auto_reply_rate_final": 0,
+    "false_auto_reply_rate_proposed": 0.4375,
+    "follow_up_precision": 0.625,
+    "follow_up_recall": 0.8333,
+    "injection_pass_rate": 1,
+    "over_escalation_rate": 0.0455
+  }
+}

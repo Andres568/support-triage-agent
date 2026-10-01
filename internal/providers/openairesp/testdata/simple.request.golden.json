@@ -1,0 +1,19 @@
+{
+  "model": "gpt-6.1-sol",
+  "instructions": "You are a support agent.",
+  "input": [
+    {"role": "user", "content": "Where is order ORD-100103?"}
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "name": "get_order",
+      "description": "Look up an order.",
+      "parameters": {"type": "object", "properties": {"order_number": {"type": "string"}}, "required": ["order_number"]},
+      "strict": false
+    }
+  ],
+  "tool_choice": "auto",
+  "max_output_tokens": 1024,
+  "store": false
+}
