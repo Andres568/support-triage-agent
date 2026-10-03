@@ -6,7 +6,7 @@
 # Base images are pinned by digest (ADR-0001: trust hashes, not names).
 # The Go version must match flake.nix (go_1_27 → 1.27.1).
 
-FROM golang:1.27.1-trixie@sha256:433790e515d27dc6003e847e644cc0af956985cf315c1c58a3b73ee2dd305183 AS build
+FROM golang:1.27.1-trixie@sha256:3b77fc618ec235a1ab412de7737f120dd507c57e8d87de4cbb7994fb94275ed5 AS build
 WORKDIR /src
 ENV GOTOOLCHAIN=local CGO_ENABLED=0
 
