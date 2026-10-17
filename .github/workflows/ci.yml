@@ -24,7 +24,7 @@ jobs:
           persist-credentials: false
           fetch-depth: 0 # gitleaks scans every commit, not just the tip
 
-      - uses: cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24 # v31.11.1
+      - uses: cachix/install-nix-action@448cde739abec1eaf0646249e3d25bb8d9bc7702 # v31.11.2
         with:
           # Keep the devShell's inputs in the store so the cache can restore them.
           extra_nix_config: |
